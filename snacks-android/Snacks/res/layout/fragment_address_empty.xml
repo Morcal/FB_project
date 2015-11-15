@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/icon_address_empty"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/orders_empty_icon" />
+
+    <TextView
+        android:id="@+id/fragment_address_empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s4"
+        android:textColor="@color/c3"
+        android:layout_marginTop="20dp"
+        android:text="@string/address_empty"
+        android:layout_below="@id/orders_empty_icon"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/fragment_address_quick_add_btn"
+        android:layout_width="144dp"
+        android:layout_height="34dp"
+        android:text="@string/quick_add"
+        android:textColor="@color/c6"
+        android:textSize="@dimen/s8"
+        android:background="@drawable/btn_account_select"
+        android:layout_below="@id/fragment_address_empty_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

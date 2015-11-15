@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingLeft="15dp"
+        >
+
+        <!-- 商品图标-->
+        <com.feibo.snacks.view.widget.ratioroundimageview.RoundedImageView
+            android:id="@+id/buy_dialog_img"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_bg_180_180"
+            app:riv_border_color="@color/c7"
+            app:riv_border_width="@dimen/fine_line_height"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/buy_dialog_img"
+            android:orientation="vertical"
+            android:paddingBottom="9dp"
+            android:paddingTop="11dp">
+
+            <TextView
+                android:id="@+id/buy_dialog_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="98.00"
+                android:textColor="@color/c1"
+                android:textSize="@dimen/s1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/buy_dialog_store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="库存1200件"
+                android:textColor="@color/c8"
+                android:textSize="@dimen/s3" />
+
+            <TextView
+                android:id="@+id/select_falvor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/select_falvor"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/s7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_detail_buy_close"
+            android:paddingTop="3dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_buy_dialog_close" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/FineLineC4Style" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <include
+        layout="@layout/layout_goodsdetail_bottom"/>
+</LinearLayout>

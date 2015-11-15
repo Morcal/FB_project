@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/c5"/>
+        <RelativeLayout
+            android:id="@+id/logistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/b1"
+            android:layout_marginLeft="25dp">
+
+            <TextView
+                android:id="@+id/logistics_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/s4"
+                android:text="@string/default_send_goods" />
+
+            <TextView
+                android:id="@+id/logistics_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s4"
+                android:textColor="@color/c3"
+                android:layout_marginTop="10dp"
+                android:text="2015-06-30 14:37:42"
+                android:layout_below="@+id/logistics_info"
+                android:layout_alignLeft="@+id/logistics_info"
+                android:layout_alignStart="@+id/logistics_info" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/c5"
+            android:layout_alignTop="@id/logistics"
+            android:layout_alignBottom="@id/logistics"
+            android:layout_marginLeft="21dp"
+            android:id="@+id/imageView8" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/logistics"
+            android:layout_alignBottom="@id/logistics"
+            android:layout_marginLeft="@dimen/b1"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_logistics_normal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

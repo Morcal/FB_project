@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+        <title>页面打开App</title>
+    </head>
+    <body>
+        <script language="javascript">
+            /* This function is invoked by the activity */  
+			function checkLogin(param) {  
+				 param == true ? alert("true") : alert("false");
+			}  
+			 /* This function is invoked by the activity */  
+			function waveBack() {  
+				alert("1");  
+				document.getElementById("droid").src="android_normal.png";  
+				alert("2");  
+			}  
+　　　　</script>
+
+		<p style="height:30px;line-height:30px;text-align:center;">WAP页面打开本地应用测试</p>
+		<p><a href="http://qing.comwei.com:8888/app_miaoturn/index.html">打开测试页面</a> </p>
+		<p><a href="feibo://snacks.app/openwith?url=http://qing.comwei.com:8888/app_miaoturn/index.html">启动应用程序</a> </p>
+		<p><a href="feibo://snacks.app/openwith?url=file:///android_asset/JS2APP_Test.html">启动应用程序跳转内置页</a> </p>
+		<p><a onClick="window.SnacksApp.isLogin()" href="">测试是否登录方法</a></p>
+		<p><a onClick="window.SnacksApp.openGoodsDetail(12345)" href="">测试进入商品详情</a></p>
+		<p><a onClick='window.SnacksApp.onClickShare("title","desc","imgUrl")' href="">测试点击分享方法</a></p>
+		<p><a onClick='window.SnacksApp.setTitle("标题")' href="">测试设置标题方法</a></p>
+　　</body>
+</html>

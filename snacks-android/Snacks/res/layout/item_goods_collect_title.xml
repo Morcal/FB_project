@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/collect_goods_invalid_distance"
+        style="@style/BoldLineStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/both_sides_new_distance"
+        android:paddingRight="@dimen/both_sides_new_distance"
+        android:paddingBottom="@dimen/both_sides_distance"
+        android:paddingTop="@dimen/both_sides_distance"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/collect_goods_distance_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_dot"/>
+        <TextView
+            android:id="@+id/collect_goods_distance_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valid_goods"
+            android:layout_marginLeft="@dimen/both_sides_new_distance"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s2"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <View style="@style/FineLineC4Style" />
+</LinearLayout>

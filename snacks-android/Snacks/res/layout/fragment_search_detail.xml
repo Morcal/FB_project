@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="@dimen/half_both_sides_distance"
+             />
+
+        <ImageView
+            android:id="@+id/scroll_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:src="@drawable/btn_top"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" 
+        android:visibility="gone"
+        android:background="@drawable/bg_white"
+        >
+
+        <TextView
+            android:id="@+id/widget_no_data_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="13dp"
+            android:drawableTop="@drawable/ic_search_no_data"
+            android:textColor="@color/color_four"
+            android:textSize="@dimen/size_three" />
+
+        <TextView
+            android:paddingTop="13dp"
+            android:id="@+id/widget_no_data_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/widget_no_data_view"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_four"
+            android:textSize="@dimen/size_three" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="3dp"
+    android:paddingLeft="@dimen/both_sides_new_distance"
+    android:paddingRight="@dimen/both_sides_new_distance"
+    android:paddingTop="@dimen/both_sides_new_distance">
+
+    <RelativeLayout
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.feibo.snacks.view.widget.HWRadioImageView xmlns:app="http://schemas.android.com/apk/res/com.feibo.snacks"
+            android:id="@+id/item_subject_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_project612_306"
+            app:hwRadio="0.5" />
+
+        <ImageView
+            android:id="@+id/item_collect_goods_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/ic_collect_select"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bg_image"
+        android:background="@drawable/bg_title2x"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/item_subject_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/both_sides_distance"
+            android:shadowColor="@color/c8"
+            android:layout_marginBottom="8dp"
+            android:shadowDx="1"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/s3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/half_both_sides_distance"
+        android:layout_marginTop="@dimen/half_both_sides_distance"
+        android:background="@drawable/bg_heart"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/item_subject_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/icon_heart_white"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="1232"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/s5" />
+    </LinearLayout>
+
+</RelativeLayout>

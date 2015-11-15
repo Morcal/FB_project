@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.feibo.snacks.view.widget.RatioLayout
+        android:id="@+id/above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_coupon"
+        app:ratioWidth="582"
+        app:ratioHeight="196">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/invalid_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/invalid_img_margin_left"
+                android:background="@drawable/icon_coupon_invalid"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="150"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/rmb_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="￥"
+                        android:textSize="@dimen/s5"
+                        android:textColor="@color/c1"/>
+
+                    <TextView
+                        android:id="@+id/coupon_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/rmb_symbol"
+                        android:textSize="@dimen/s9"
+                        android:textColor="@color/c1"
+                        tools:text="100"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="332"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/coupon_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/s7"
+                    android:textColor="@color/c8"
+                    android:paddingBottom="8dp"
+                    tools:text="零食小喵新人专享"/>
+                <TextView
+                    android:id="@+id/coupon_valid_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="2dp"
+                    android:drawableLeft="@drawable/icon_dot_black"
+                    android:drawablePadding="4dp"
+                    android:textSize="@dimen/s5"
+                    android:textColor="@color/c10"
+                    tools:text="满400元可用"/>
+                <TextView
+                    android:id="@+id/coupon_use_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_dot_black"
+                    android:drawablePadding="4dp"
+                    android:textSize="@dimen/s5"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="@color/c10"
+                    tools:text="指定商家使用"/>
+                <TextView
+                    android:id="@+id/coupon_valid_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textSize="@dimen/s6"
+                    android:textColor="@color/c1"
+                    tools:text="15/08/31 23:59 - 15/08/31 23:59"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/coupon_detail_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_red_coupon"
+                android:layout_weight="100">
+                <TextView
+                    android:id="@+id/coupon_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/s4"
+                    android:textColor="@color/c6"
+                    android:text="详情"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.feibo.snacks.view.widget.RatioLayout>
+
+    <com.feibo.snacks.view.widget.RatioLayout
+        android:id="@+id/coupon_cause_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_bottom"
+        android:visibility="gone"
+        app:ratioWidth="582"
+        app:ratioHeight="60">
+
+        <TextView
+            android:id="@+id/coupon_cause"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/s5"
+            android:textColor="@color/c10"
+            tools:text="所结算商品中, 没有符合该活动的商品"/>
+
+    </com.feibo.snacks.view.widget.RatioLayout>
+
+</LinearLayout>

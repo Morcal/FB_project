@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/head_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_header_back" />
+
+        <LinearLayout
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/collect_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_tab_collect"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/header_footer_left_right_padding"
+                android:paddingRight="@dimen/header_footer_left_right_padding"
+                android:paddingTop="3.5dp"
+                android:singleLine="true"
+                android:text="@string/goods"
+                android:textColor="@drawable/text_select_color"
+                android:textSize="@dimen/s2" />
+
+            <TextView
+                android:id="@+id/collect_subejct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_tab_collect_right"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/header_footer_left_right_padding"
+                android:paddingRight="@dimen/header_footer_left_right_padding"
+                android:paddingTop="3.5dp"
+                android:singleLine="true"
+                android:text="@string/topic"
+                android:textColor="@drawable/text_select_color"
+                android:textSize="@dimen/s2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s8"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/FineLineC7Style" />
+
+    <View style="@style/FineLineC4Style" />
+
+</LinearLayout>

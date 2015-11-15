@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.feibo.snacks.view.widget.DrawableCenterTextView
+        android:id="@+id/btn_clear_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/btn_cart_delete"
+        android:drawablePadding="5dp"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        android:text="@string/search_history_clear"
+        android:textColor="@color/c8"
+        android:textSize="@dimen/s8" />
+
+</LinearLayout>

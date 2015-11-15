@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <com.feibo.snacks.view.widget.DifferSizeAutoScrollViewpager
+        xmlns:app="http://schemas.android.com/apk/res/com.feibo.snacks"
+        android:id="@+id/home_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:radio="0.421875"
+        app:type="1" />
+
+    <com.feibo.snacks.view.widget.DifferSizeIndicatorView
+        xmlns:app="http://schemas.android.com/apk/res/com.feibo.snacks"
+        android:id="@+id/home_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/home_topic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="12dp"
+        app:count="0"
+        app:drawable="@drawable/ic_indicator2"
+        app:position="0"
+        app:space="9dp" />
+
+    <View
+        android:id="@+id/home_topic_below"
+        android:layout_below="@id/home_topic"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/c5"/>
+
+    <com.feibo.snacks.view.widget.FixGridView
+        xmlns:app="http://schemas.android.com/apk/res/com.feibo.snacks"
+        android:id="@+id/home_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_topic_below"
+        android:background="@color/c4"
+        android:horizontalSpacing="0.5dp"
+        android:listSelector="@null"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0.5dp" />
+
+    <View
+        android:layout_below="@id/home_category"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/c5"/>
+
+</RelativeLayout>

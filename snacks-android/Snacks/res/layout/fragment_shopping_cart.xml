@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- 购物车操作栏-->
+    <RelativeLayout
+        android:id="@+id/cart_operation_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/c4"
+        android:paddingLeft="@dimen/b1"
+        android:paddingRight="@dimen/b1">
+
+        <ImageView
+            android:id="@+id/cart_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_cart_select"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_all"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s4"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/cart_select_all"
+            android:layout_toEndOf="@+id/cart_select_all" />
+
+        <Button
+            android:id="@+id/item_orders_account"
+            android:layout_width="78dp"
+            android:layout_height="34dp"
+            android:text="结算"
+            android:textSize="@dimen/s2"
+            android:textColor="@color/c6"
+            android:background="@drawable/btn_account_select"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/item_orders_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计 : "
+                android:textColor="@color/c2"
+                android:textSize="@dimen/s2"/>
+
+                <TextView
+                    android:id="@+id/cart_account_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c1"
+                    android:textSize="@dimen/s2"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/post_free"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/s6"
+                android:layout_gravity="right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--列表项-->
+    <ListView
+       android:id="@+id/cart_list"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/cart_xiaomiao_lines"
+       android:layout_above="@+id/cart_operation_menu"
+       android:cacheColorHint="@android:color/transparent"
+       android:divider="@null"
+       android:dividerHeight="0px"
+       android:listSelector="@android:color/transparent"
+       android:scrollbars="none" />
+    <include
+        android:id="@+id/fragment_cart_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cart_list"
+        android:visibility="gone"
+        layout="@layout/layout_orders_empty"/>
+
+</RelativeLayout>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">零食小喵</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pull_to_refresh_pull_label">往下拉一拉，就有好吃的</string>
+    <string name="pull_to_refresh_release_label">松开人家嘛，给你好吃的</string>
+    <string name="pull_to_refresh_refreshing_label">等等人家嘛，正在加载中</string>
+    <string name="loading_text">正在载入</string>
+    <string name="refresh_loading">重新加载</string>
+    <string name="loading_default_fail_text">你的网络开小差啦</string>
+    <string name="loading_default_fail_text2">点击重新加载或检查网络~</string>
+    <string name="loading_more_no_data">家底都被你挖光了，再去发现新大陆吧~</string>
+    <string name="category_no_data">没有符合条件的商品，请重新搜索，喵~</string>
+    <string name="not_network">当前无网络，请检查网络状态</string>
+    <string name="exit_snacks">退出零食小喵吗？</string>
+    <string name="no_support_gif">暂不支持gif图片！！！</string>
+    <string name="copySuccess">已复制到剪贴板</string>
+
+    <!-- 主场景页 -->
+    <string name="home">首页</string>
+    <string name="category">分类</string>
+    <string name="sales">特卖</string>
+    <string name="topic">专题</string>
+    <string name="person">我的</string>
+    <string name="home_title">零食小喵</string>
+    <string name="setting">设置</string>
+    <string name="dialog_cancle">无情拒绝</string>
+    <string name="recommend_title_left">品牌5折团</string>
+    <string name="recommend_title_right">独立潮牌为你而生 5折优惠</string>
+    <string name="newproduct_title_left">每日上新</string>
+    <string name="newproduct_title_right">每天十点准时上新 敬请期待</string>
+
+    <!-- 版本更新 -->
+    <string name="dialog_confirm">欣然接受</string>
+    <string name="dialog_content">是否更新最新版本？</string>
+    <string name="dialog_download_content">你处在非Wifi状态下，是否需要更新？</string>
+    <string name="dialog_download_confirm">马上更新</string>
+    <string name="dialog_download_cancle">改天再来</string>
+    <string name="update_no_new_version">你已经拥有最新版本啦，么么哒</string>
+
+    <!-- 分享 -->
+    <string name="dialog_share_title">想告诉谁</string>
+    <string name="dialog_share_weixin">微信好友</string>
+    <string name="dialog_share_zone">QQ空间</string>
+    <string name="dialog_share_friend">朋友圈</string>
+    <string name="dialog_share_sina">新浪微博</string>
+    <string name="dialog_share_qq">QQ好友</string>
+    <string name="dialog_share_copy">复制链接</string>
+
+    <!-- 意见反馈 -->
+    <string name="feedback_hint">和小喵说两句</string>
+    <string name="feedback_send">发送</string>
+
+    <!-- 搜索页 -->
+    <string name="search">搜索</string>
+    <string name="search_cancel">取消</string>
+    <string name="search_hint">请输入商品名称或关键字</string>
+    <string name="search_history_clear">清空搜索历史</string>
+    <string name="search_no_data">呜呜这款零食暂时断货了</string>
+    <string name="search_no_data1">试试别的吧~</string>
+    <string name="search_no_data2">没有符合条件的商品</string>
+    <string name="search_no_data3">请重新搜索，喵~</string>
+    <string name="search_key_null">请输入你喜欢的零食，喵~</string>
+
+    <!-- 商品详情 -->
+    <string name="collect">收藏</string>
+    <string name="share">分享</string>
+    <string name="shopping">立即到淘宝购买</string>
+    <string name="comment">喵亲口碑(%d)</string>
+    <string name="dialog_login_content">登陆后才可以收藏美味哟~</string>
+    <string name="dialog_login_confirm">去登录</string>
+    <string name="dialog_login_cancle">稍后吧</string>
+    <string name="dialog_bargain_content">该商品已售空</string>
+    <string name="dialog_bargain_confirm">返回上一页</string>
+    <string name="dialog_bargain_cancle">随便逛逛</string>
+    <string name="dialog_empty_content">特卖结束，商品已恢复原价</string>
+    <string name="dialog_empty_confirm">返回上一页</string>
+    <string name="dialog_empty_cancle">继续购买</string>
+    <string name="null_comment">美味新鲜上架，买家还来不及评论哦~</string>
+    <string name="null_detail">该商品好吃的连编辑姐姐都忘记填商品详情了</string>    
+    <string name="null_detail1">填商品详情了</string>
+    <string name="supermarket_price">超市价</string>
+    <string name="add_to_cart">加入购物车</string>
+    <string name="delicious_info">美味信息</string>
+    <string name="suppliers">供应商</string>
+    <string name="production_date">生成日期</string>
+    <string name="shelf_life">保质期</string>
+    <string name="production_place">产地</string>
+    <string name="look_more_pingjia">查看更多评价</string>
+    <string name="taste">口味</string>
+    <string name="buy_number">购买数量</string>
+    <string name="detail_title">美味详情</string>
+    <string name="no_comment">暂无评论</string>
+    <string name="confirm">确定</string>
+    <string name="no_select_kind">请先选择口味</string>
+    <string name="select_falvor">请选择口味</string>
+    <string name="add_to_cart_success">已成功添加至购物车</string>
+    <string name="store">库存%d件</string>
+    <string name="sell_empty">喵，商品已售空！</string>
+    <string name="off_shelf">该商品已下架</string>
+
+    <!-- 新的专题详情 -->
+	<string name="like">喜欢</string>
+    <string name="end_brand">品牌团特卖已结束</string>
+
+	<!-- 收藏 -->
+	<string name="goods">商品</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="cancel">取消</string>
+    <string name="collect_title">我收藏的商品</string>
+    <string name="empty_collect_text1">吃货的碗里怎能是空的呢？</string>
+    <string name="empty_collect_text2">快去逛逛吧~</string>
+    <string name="valid_goods">有效商品</string>
+    <string name="invalid_goods">失效商品</string>
+    <string name="no_select_goods">请先选择商品</string>
+    <string name="no_select_subject">请先选择专题</string>
+
+    <!-- 今日特卖 -->
+    <string name="today_special_title">今日特卖</string>
+
+    <!-- 我的 -->
+    <string name="qq_login">QQ登录</string>
+    <string name="sina_login">微博登录</string>
+    <string name="wx_login">微信登录</string>
+    <string name="change_nick_notice">昵称不能超过10个汉字或20个英文字符，支持中英文、数字、下划线</string>
+    <string name="about_us">亲爱的主人：\n\t\t小喵终于等到你啦！吃货见吃货，两嘴喵一喵，小喵自己也算半个吃货，特爱吃零食，小喵能为吃货做点什么呢？\n\t\t〖今日特卖〗超市品牌零食太贵？小喵砍价砍砍砍，天天特惠1折起！而且厂家直发够新鲜，再也不吃小店里那快过期的零食！\n\t\t〖进口零食〗那些从未吃过的海外零食再也不用托国外的亲戚了，欧美日韩东南亚想吃就吃，告别楼下小卖部老三款！\n\t\t〖精挑细选〗帮你挑出全淘宝最好吃TOP10零食，日本韩国TOP10零食，个个精挑细选！\n\t\t〖专题推荐〗周末宅宿舍看片、办公室通宵加班，送男神女神零食大礼包，小喵帮你认真选！\n\t\t这就是小喵专为吃货量身打造的零食神器——零食小喵，啦啦啦……</string>
+    <string name="about_us_contact">快来加入小喵吃货大家庭吧……\n新浪微博：\t@零食小喵\n微信号服务号：\t零食小喵lsxiaomiao\n小喵QQ号：\t3188288037\n吃货QQ群：\t399180298</string>
+    <string name="chineses_length_outof">昵称不能超过10个汉字</string>
+    <string name="character_length_outof">昵称不能超过20个英文字符</string>
+    <string name="change_nick_success">昵称修改成功</string>
+    <string name="nick_is_null">亲，输入您的昵称</string>
+    <string name="dialog_exit_content">主人，真的要离开小喵吗？</string>
+    <string name="dialog_exit_confirm">下次再来</string>
+    <string name="dialog_exit_cancle">再逛会儿</string>
+    <string name="go_login">马上去登录，就能跟小喵说悄悄话啦~</string>
+    <string name="snacks_mall_order">我的订单</string>
+    <string name="snacks_look_order">查看全部订单</string>
+    <string name="snacks_taobao_order">别漏了这里的零食</string>
+    <string name="snacks_official_service">联系客服</string>
+    <string name="snacks_official_service_phone">0592-3156800</string>
+    <string name="snacks_official_service_phone_title">客服电话 :</string>
+    <string name="snacks_official_service_qq">3206494235</string>
+    <string name="snacks_official_service_qq_title">客服QQ :</string>
+    <string name="taobao_order">淘宝订单</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="invited_send_gift">邀请好友送大礼</string>
+    <string name="coupon">我的优惠券</string>
+    <string name="suggestion_feedback">意见反馈</string>
+    <string name="wait_pay">待付款</string>
+    <string name="address_empty">还没有收货地址哦</string>
+    <string name="quick_add">快去添加</string>
+    <string name="wait_send">待发货</string>
+    <string name="wait_receive">待收货</string>
+    <string name="dialog_call_service">呼叫官方客服？</string>
+    <string name="wait_assess">待评价</string>
+    <string name="dialog_call_btn">呼叫</string>
+    <string name="default_nickname">小喵的小伙伴</string>
+    <string name="title_edit_data">个人资料</string>
+    <string name="title_edit_nickname">修改昵称</string>
+    <string name="btn_save">保存</string>
+    <string name="text_nickname">昵称</string>
+    <string name="text_avatar">头像</string>
+    <string name="toast_nickname_empty">昵称无内容</string>
+    <string name="toast_nickname_error">请输入2～15个字符的昵称</string>
+    
+    <!-- 收藏 -->
+    <string name="add_collect_success">好吃的到碗里啦~</string>
+    <string name="cancel_collect_success">取消收藏</string>
+    <string name="repeat_collect">主人,已收藏，求带走~</string>
+    <string name="not_collect">吃货的碗里怎能是空的呢？快去逛逛吧~)</string>
+    
+    <!-- 统计 用户使用时长-->
+    <string name="homefragment">首页</string>
+    <string name="homeBanner">首页焦点栏</string>
+    <string name="homeAd">首页广告位</string>
+    <string name="deliciousGoods">好吃到爆</string>
+    <string name="brandSpecialOffer">品牌特卖列表页</string>
+    <string name="categoryFragment">分类列表页</string>
+    <string name="todaySpecialOffer">今日特卖</string>
+    <string name="subjectAd">专题广告位</string>
+    <string name="subjectfragment">专题Tab页</string>
+    <string name="subjectDetailFragment">专题详情列表</string>
+    <string name="cartFragment">购物车</string>
+    <string name="ordersFragment">零食小喵商家订单</string>
+    <string name="collectFragment">收藏页</string>
+    <string name="searchDetailFragment">搜索列表</string>
+    <string name="couponFragment">优惠券</string>
+    <string name="ordersConfirmFragment">确认订单</string>
+    <string name="ordersSuccessFragment">支付成功</string>
+
+
+    <string name="classifyfragment">分类tab页</string>
+    <string name="promotionDeatilFragment">活动详情页</string>
+    <string name="brandDetailFragment">品牌列表页</string>
+    <string name="categoryDetailFragment">普通品类列表页</string>
+    <string name="subjectNewDetailFragment">新专题详情列表</string>
+    <string name="goodsDetailFragment">商品详情页</string>
+    <string name="modifyNickFragment">修改昵称</string>
+    <string name="personFragment">我的页面</string>
+    <string name="baseSwitchActivity">BaseSwitchActivity</string>
+    <string name="webAcitivity">web页</string>
+    <string name="mainActivity">MainActivity</string>
+    <string name="guideActivity">引导页</string>
+    <string name="launchActivity">启动页</string>
+    <string name="settingActivity">设置页</string>
+    <string name="specialsellFragment">今日特卖</string>
+    <string name="brandGroupFragment">品牌列表页</string>
+    <string name="bannerGoodsListFragment">专题下的商品列表</string>
+    <string name="supplierGoodsListFragment">供应商下的商品列表</string>
+    <string name="subjectH5DetailFragment">专题详情列表</string>
+    
+    <!-- 统计用户行为-->
+    <string name="click_home_search">click_home_search</string>
+    <string name="click_home_banner">click_home_banner</string>
+    <string name="click_home_classify">click_home_classify</string>
+    <string name="click_home_brand">click_home_brand</string>
+    <string name="click_home_recommend">click_home_recommend</string>
+    <string name="click_home_specials">click_home_specials</string>
+    <string name="click_classify_search">click_classify_search</string>
+    <string name="click_classify_left">click_classify_left</string>
+    <string name="click_classify_cate">click_classify_cate</string>
+    <string name="click_classify_brand">click_classify_brand</string>
+    <string name="click_subject_item">click_subject_item</string>
+    <string name="enter_subject_detail">enter_subject_detail</string>
+    <string name="click_person_collect">click_person_collect</string>
+    <string name="click_person_coupon">click_person_coupon</string>
+    <string name="search_result_enter_detail">search_result_enter_detail</string>
+    <string name="click_home_count">click_home_count</string>
+    <string name="click_subject_count">click_subject_count</string>
+    <string name="click_classify_count">click_classify_count</string>
+    <string name="click_person_count">click_person_count</string>
+    <string name="click_specialsell_count">click_specialsell_count</string>
+    <string name="click_discount_goods">click_discount_goods</string>
+    <string name="click_subject_special">click_subject_special</string>
+    <string name="click_discount_taobao_order">click_discount_taobao_order</string>
+    <string name="click_subject_special_taobao_order">click_subject_special_taobao_order</string>
+    
+     <!-- 商品本身的统计-->
+    <string name="click_guess_like">click_guess_like</string>
+    <string name="click_collect">click_collect</string>
+    <string name="click_to_cart">click_to_cart</string>
+    <string name="click_share">click_share</string>
+    <string name="click_buyer_comment">click_buyer_comment</string>
+    <string name="click_taobao_order">click_taobao_order</string>
+    
+    <!-- 商品 -->
+    <string name="show_ori_price">原价:￥%.02f</string>
+    <string name="show_discount">%s折</string>
+    <string name="show_cur_price">￥%.02f</string>
+    <string name="sold">已售%d件</string>
+    
+    <string name="expand">全部</string>
+    <string name="collope">收起</string>
+    
+    
+    <!-- 登录-->
+    <string name="login_hint">请输入11位手机号码</string>
+    <string name="login_pwd_hint">请输入6-16位密码</string>
+    <string name="login_title_login">登录</string>
+    <string name="login_title_register">注册</string>
+    <string name="login_quick_register">快速注册</string>
+    <string name="login_title_forget">重置密码</string>
+    <string name="login_title_bind">绑定手机号码</string>
+    <string name="login_btn_login">立即登录</string>
+    <string name="login_btn_bind">确认绑定</string>
+    <string name="login_btn_register">立即注册</string>
+    <string name="login_code_hint">请输入短信验证码</string>
+    <string name="login_img_code_hint">请输入图片验证码</string>
+    <string name="getting_img_code">验证码加载中</string>
+    <string name="get_img_code_fail">获取失败</string>
+    <string name="login_platform">第三方账号登录</string>
+    <string name="forget_pwd">忘记密码?</string>
+    <string name="get_code">获取验证码</string>
+    <string name="login_edit_err_phone_null">"手机号不能为空"</string>
+    <string name="login_edit_err_pwd_null">"密码不能为空"</string>
+    <string name="login_edit_err_code_null">"验证码不能为空"</string>
+    <string name="login_edit_err_pwd_rule">"请输入6~16位密码"</string>
+    <string name="login_edit_err_code_rule">"验证码有误，请重新输入"</string>
+    <string name="login_edit_err_img_code_rule">"图片验证码有误"</string>
+    <string name="login_edit_err_phone_or_pwd_rule">"手机格式或密码有误，请重新输入"</string>
+    <string name="login_edit_err_phone_rule">"手机格式有误，请重新输入"</string>
+    <string name="login_edit_err_not_num">"请输入数字"</string>
+    <string name="login_edit_err_chanese">"请输入数字或字母"</string>
+    <string name="login_phone_rule">"^[1]\\d{10}$"</string>
+    <string name="login_pwd_rule">"^\\w{6,16}$"</string>
+    <!--<string name="login_code_rule">"^[A-Za-z0-9]{6}$"</string>-->
+    <!--<string name="login_rule_ch_null">"([\\u4E00-\\u9FA5]*|\\s)+"</string>-->
+    <string name="login_code_rule">"^[A-Za-z0-9]{6}$"</string>
+    <string name="login_img_code_rule">"^[A-Za-z0-9]{4}$"</string>
+    <string name="login_rule_ch_null">"[^A-Za-z0-9]+"</string>
+
+    <string name="login_wait_get_code">s后重发</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_author_fail">Authorize Failed</string>
+    <string name="login_no_bind">未绑定手机号，将进入绑定页面</string>
+    <string name="login_loading">"登录中..."</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_get_code_fail">获取短信验证码失败</string>
+    <string name="login_get_img_code_fail">获取图片验证码失败</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="change_pwd_success">密码已修改，登录成功</string>
+    <string name="change_pwd_fail">密码重置失败</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="bind_fail">绑定失败</string>
+    <string name="finish">完成</string>
+    
+    <!--收货人-->
+    <string name="contacter_name">收货人</string>
+    <string name="contacter_name_hint">请输入收货人姓名</string>
+    <string name="phone_number">手机号码</string>
+    <string name="province_city_address">省市地址</string>
+    <string name="province_city_address_hint">选择你所在省市地址</string>
+    <string name="dialog_title_choose_address">请选择省市</string>
+    <string name="street_address">街道地址</string>
+    <string name="street_address_hint">请输入详细街道地址</string>
+    <string name="please_set_full_address">请选择完整的地址信息</string>
+    <string name="add_address">新建收货地址</string>
+    <string name="add_address_finish">完成</string>
+    <string name="add_address_un_set">未设定</string>
+    <string name="add_address_name_null">收货人不能为空</string>
+    <string name="add_address_name_length_error">收货人姓名超过15字符限制</string>
+    <string name="add_address_city_null">省市地区不能为空</string>
+    <string name="add_address_street_null">街道地址不能为空</string>
+    <string name="add_address_street_length_error">详细地址字数必须在5至60之间</string>
+
+    <!-- 购物车-->
+    <string name="taobao_shopping_cart">淘宝购物车</string>
+    <string name="xiaomiao_shopping_cart">小喵购物车</string>
+    <string name="shopping_cart_title">购物车</string>
+    <string name="select_all">全选</string>
+    <string name="post_free">不含运费</string>
+    <string name="taobao_hint">别漏了这里的零食</string>
+    <string name="goods_failure">该商品信息已失效</string>
+    <string name="cart_delete_remind_content">在购物车中删除该商品?</string>
+    <string name="cart_delete_all_no_avaible_remind_content">确定清空这些商品吗?</string>
+    <string name="cart_delete_remind_success">删除成功</string>
+    <string name="cart_empty_list">购物车还是空着，快去挑选商品吧</string>
+    <string name="cart_can_not_reduce">喵亲，不能再减少了哦</string>
+    <string name="cart_number_out">该宝贝不能购买更多哦</string>
+    <string name="full_free_mail">满包邮</string>
+    <string name="cart_cannot_shopping">当前不可购买的商品</string>
+
+    <!--订单-->
+    <string name="orders_all_orders">全部</string>
+    <string name="orders_wait_pay">待付款</string>
+    <string name="orders_wait_send">待发货</string>
+    <string name="orders_wait_receipt">待收货</string>
+    <string name="orders_wait_comment">待评价</string>
+    <string name="orders_title">我的订单</string>
+    <string name="cancel_orders">取消订单</string>
+    <string name="account">支付订单</string>
+    <string name="refund_orders">申请退款</string>
+    <string name="remind_orders">提醒发货</string>
+    <string name="exmind_logistics">查看物流</string>
+    <string name="affirm_orders">确认收货</string>
+    <string name="orders_comment">去评价</string>
+    <string name="delete_orders">删除订单</string>
+    <string name="orders_state_wait_pay">待付款</string>
+    <string name="orders_state_wait_send">待发货</string>
+    <string name="orders_refund_goods">申请退货</string>
+    <string name="orders_state_wait_get">待收货</string>
+    <string name="orders_state_trade_success">交易成功</string>
+    <string name="orders_state_trade_fail">交易关闭</string>
+    <string name="orders_state_wait_comment">待评价</string>
+    <string name="orders_state_wait_out_orders">售后处理中</string>
+    <string name="orders_comment_orders">评价订单</string>
+    <string name="zhi_fu_bao">支付宝</string>
+    <string name="orders_confirm_note">您对商家有特殊要求可在此添加备注</string>
+    <string name="orders_account_count_empty">你还没有选择商品哦, 喵~</string>
+    <string name="no_select_address">您尚未添加收货地址</string>
+    <string name="orders_account_user_no_login">只有登录后才能购买哦</string>
+
+    <string name="orders_phone">拨打电话</string>
+    <string name="orders_cancel_orders_content">你是否需要取消订单?</string>
+    <string name="orders_get_goods_content">你是否需要确认收货?</string>
+    <string name="orders_delete_orders_content">您确定删除此订单?</string>
+    <string name="orders_remind_send_orders_success">提醒卖家发货成功</string>
+    <string name="orders_remind_more_time">您今天提醒的次数过多，明天再来提醒他吧！</string>
+    <string name="orders_empty">您还没有相关的订单</string>
+    <string name="orders_empty_recommend">可以去看看有哪些想买的</string>
+
+    <string name="orders_goods_no_use">该商品价格发生变动</string>
+    <string name="orders_goods_empty">该商品已售空</string>
+    <string name="orders_goods_off_set">该商品已下架</string>
+    <string name="orders_comment_hint">亲，写点什么吧您的评价对小喵来说至关重要</string>
+    <string name="orders_confirm_orders_fail">订单内商品信息发生变动</string>
+
+    <!-- 物流-->
+    <string name="send_pay_desc">"运费金额: ￥ " </string>
+    <string name="orders_pay_desc">"订单金额(含运费): ￥ "</string>
+    <string name="default_send_goods">"已发货"</string>
+
+    <!-- 对话框-->
+    <string name="str_confirm">确定</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_comment_edit_dialog_hint">亲，写点什么吧！您的评价对小喵来说至关重要！</string>
+    <string name="str_comment_edit_dialog_title">发表评价</string>
+    <string name="str_order_confirm_edit_dialog_title">添加备注</string>
+
+    <!-- 设置-->
+    <string name="setting_item_clear_cache">清除缓存</string>
+    <string name="setting_item_clear_finish">缓存已经清空！</string>
+    <string name="dialog_clear_content">是否清除所有缓存数据？</string>
+    <string name="clear_cache_finish_hint">0.0KB</string>
+    <string name="setting_item_about_snacks">关于零食小喵</string>
+    <string name="setting_item_check_version">检查新版本</string>
+    <string name="setting_item_person_data">个人资料</string>
+    <string name="setting_item_address_manager">地址管理</string>
+    <string name="checking_version">检查更新中...</string>
+    <string name="dailog_update_btn_wait">稍后再说</string>
+    <string name="dailog_update_btn_now">立即更新</string>
+    <string name="dailog_update_default_msg">是否更新最新版本？</string>
+    <string name="check_new_version_default_hint">当前版本：v</string>
+    <string name="login_out">退出登录</string>
+    <string name="dailog_delete_address_content">您是否确认删除该收货地址?</string>
+    <string name="dailog_address_updata">提交中...</string>
+    <string name="dialog_progress">加载中...</string>
+
+
+    <string name="change_avatar_success">修改头像成功</string>
+    <!-- 品牌团-->
+    <string name="brand_finish">该品牌团活动结束</string>
+    <string name="goods_sell_empty">该商品已售空</string>
+    <string name="brand_title">零食小喵特供</string>
+
+    <!-- 交易成功 -->
+    <string name="trade_success">交易成功</string>
+    <string name="trade_success_result">商家将会收到您确认的货款</string>
+    <string name="trade_success_confirm">支付结果确认中</string>
+    <string name="trade_success_order">订单详情</string>
+    <string name="trade_success_comment">立即评价</string>
+    <string name="pay_success_home">返回首页</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_money">实付款:</string>
+    <string name="pay_failure">支付失败</string>
+    <string name="confirm_orders">交易成功</string>
+    <string name="pay_failure_result">本次订单支付失败，请重新支付</string>
+    <string name="pay_success_result">您的订单已提交，商家会尽快发货</string>
+    <string name="confirm_orders_result">商家将会收到您确认的货款</string>
+    <string name="orders_comment_all_empty">喵亲,请先评价吧</string>
+    <string name="orders_comment_exit_one_empty">喵亲,您还有未评价的商品</string>
+
+    <!-- 优惠券相关 -->
+    <string name="no_network">网络异常，再试试吧</string>
+    <string name="grant_time_end">发放时间结束啦</string>
+    <string name="rob_finish">优惠券被抢光啦</string>
+    <string name="receive_success">已成功领取优惠券</string>
+    <string name="no_paid">优惠券还未开始发放</string>
+    <string name="no_login">登录才能领券哦</string>
+    <string name="coupon_detail">详情</string>
+    <string name="coupon_using">使用</string>
+    <string name="no_my_coupon">很遗憾，您还没有优惠券</string>
+    <string name="no_valid_coupon">很遗憾，您暂无可以使用的优惠券</string>
+    <string name="valid_coupon">可用券</string>
+    <string name="invalid_coupon">不可用券</string>
+    <string name="cannot_use_coupon">该优惠券无法使用</string>
+    <string name="coupon_number">%d张可用</string>
+    <string name="big_gifts_received_error">\"活动爆棚啦，请重新下单\"</string>
+
+
+</resources>

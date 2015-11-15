@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c5"
+    android:orientation="vertical">
+
+    <View style="@style/BoldLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/c6">
+
+        <LinearLayout
+            android:id="@+id/btn_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_base_item_layout"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@color/c6"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="@dimen/s3"
+                android:textColor="@color/c8"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:maxLength="20"
+                android:singleLine="true"
+                tools:ignore="HardcodedText"
+                tools:text="昵称" />
+            <ImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_header_search_cancle"/>
+        </LinearLayout>
+
+        <View style="@style/FineLineC4Style"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+    </LinearLayout>
+</LinearLayout>

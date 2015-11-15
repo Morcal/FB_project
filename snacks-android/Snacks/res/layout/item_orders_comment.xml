@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/c5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/b1">
+
+        <!-- 商品图标-->
+        <com.feibo.snacks.view.widget.ratioroundimageview.RoundedImageView
+            android:id="@+id/item_orders_goods_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_bg_150_150"
+            app:riv_border_color="@color/c7"
+            app:riv_border_width="@dimen/fine_line_height"
+            app:riv_oval="false" />
+
+        <!--商品标题-->
+        <TextView
+            android:id="@+id/item_orders_goods_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/item_orders_goods_icon"
+            android:maxLines="2"
+            android:text="玛丽德手工法式马卡龙甜点法国进口撩高点"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s5" />
+
+        <!--商品口味-->
+        <TextView
+            android:id="@+id/item_orders_kinds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_orders_goods_title"
+            android:layout_alignStart="@+id/item_orders_goods_title"
+            android:layout_below="@+id/item_orders_goods_title"
+            android:layout_marginTop="7dp"
+            android:text="口味 : 原味"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/s5" />
+
+        <TextView
+            android:id="@+id/item_orders_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_orders_goods_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/item_orders_goods_icon"
+            android:layout_toRightOf="@+id/item_orders_goods_icon"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s4" />
+
+        <TextView
+            android:id="@+id/item_orders_goods_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_orders_goods_icon"
+            android:layout_alignParentRight="true"
+            android:text="x1"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s4" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_orders_comment_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/b1"
+        android:layout_marginLeft="@dimen/b1"
+        android:layout_marginRight="@dimen/b1"
+        android:background="@drawable/bg_pj"
+        android:hint="@string/orders_comment_hint"
+        android:paddingBottom="30dp"
+        android:paddingLeft="@dimen/b1"
+        android:paddingRight="@dimen/b1"
+        android:paddingTop="@dimen/b1"
+        android:textColor="@color/c3"
+        android:textSize="@dimen/s5" />
+
+</LinearLayout>

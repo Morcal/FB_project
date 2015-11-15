@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_head_hight"
+            android:background="@drawable/bg_user">
+
+            <com.feibo.snacks.view.widget.BaseRedIcon
+                android:id="@+id/btn_shopping_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="8dp"
+                app:image="@drawable/btn_car_white"/>
+
+            <ImageView
+                android:id="@+id/btn_setting"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/btn_set_white"/>
+
+            <com.feibo.snacks.view.widget.CircleImageView
+                android:id="@+id/image_avatar"
+                android:layout_width="@dimen/person_avatar_size"
+                android:layout_height="@dimen/person_avatar_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/person_avatar_margin_top"
+                android:background="@drawable/default_photo"
+                app:circle_border_color="@color/c6"
+                app:circle_border_width="@dimen/person_avatar_outline_size"
+                app:circle_border_overlay="false"/>
+
+            <LinearLayout
+                android:id="@+id/board_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_avatar"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <TextView
+                    android:id="@+id/btn_register"
+                    android:layout_width="@dimen/person_btn_height"
+                    android:layout_height="@dimen/person_btn_width"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/login_title_register"
+                    android:textColor="@color/c6"
+                    android:textSize="@dimen/s2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="/"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/c6"
+                    android:textSize="@dimen/s2" />
+                <TextView
+                    android:id="@+id/btn_login"
+                    android:layout_width="@dimen/person_btn_height"
+                    android:layout_height="@dimen/person_btn_width"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/login_title_login"
+                    android:textColor="@color/c6"
+                    android:textSize="@dimen/s2" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/board_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_avatar"
+                android:gravity="center"
+                android:paddingTop="17dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/text_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:maxEms="20"
+                    android:text="@string/default_nickname"
+                    android:textColor="@color/c6"
+                    android:textSize="@dimen/s2" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View style="@style/BoldLineStyle" />
+
+        <View style="@style/FineLineC4Style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c6"
+            android:gravity="center_vertical"
+            android:paddingTop="7dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.feibo.snacks.view.widget.BaseRedIcon
+                android:id="@+id/btn_order_wait_pay"
+                style="@style/PersonOrderStateItemStyle"
+                app:image="@drawable/icon_pay_big"
+                app:title="@string/wait_pay" />
+
+            <com.feibo.snacks.view.widget.BaseRedIcon
+                android:id="@+id/btn_order_wait_send"
+                style="@style/PersonOrderStateItemStyle"
+                app:image="@drawable/icon_delivery"
+                app:title="@string/wait_send" />
+
+            <com.feibo.snacks.view.widget.BaseRedIcon
+                android:id="@+id/btn_order_wait_receive"
+                style="@style/PersonOrderStateItemStyle"
+                app:image="@drawable/icon_logistics"
+                app:title="@string/wait_receive" />
+
+            <com.feibo.snacks.view.widget.BaseRedIcon
+                android:id="@+id/btn_order_wait_assess"
+                style="@style/PersonOrderStateItemStyle"
+                app:image="@drawable/icon_evaluate"
+                app:title="@string/wait_assess" />
+
+        </LinearLayout>
+
+        <View style="@style/FineLineC4Style" />
+
+        <com.feibo.snacks.view.widget.BaseItemLayout
+            android:id="@+id/item_order_snack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintType="onlyMsg"
+            app:itemDrawable="@drawable/icon_order"
+            app:itemTitle="@string/snacks_mall_order"
+            app:messageHintTitle="@string/snacks_look_order"
+            app:showMarginBottom="true" />
+
+        <View style="@style/FineLineC4Style" />
+
+        <com.feibo.snacks.view.widget.BaseItemLayout
+            android:id="@+id/item_order_taobao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintType="onlyMsg"
+            app:itemDrawable="@drawable/icon_tb_order"
+            app:itemTitle="@string/taobao_order"
+            app:messageHintTitle="@string/snacks_taobao_order"
+            app:showMarginBottom="true" />
+
+        <View style="@style/FineLineC4Style" />
+
+        <com.feibo.snacks.view.widget.BaseItemLayout
+            android:id="@+id/item_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintType="noHint"
+            app:itemDrawable="@drawable/icon_coupon"
+            app:itemTitle="@string/coupon" />
+
+        <com.feibo.snacks.view.widget.BaseItemLayout
+        android:id="@+id/item_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintType="noHint"
+        app:itemDrawable="@drawable/icon_like_mine"
+        app:itemTitle="@string/my_collect"
+        app:showMarginBottom="false" />
+
+        <com.feibo.snacks.view.widget.BaseItemLayout
+            android:id="@+id/item_invite_send_gift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintType="noHint"
+            android:visibility="gone"
+            app:itemDrawable="@drawable/icon_gift"
+            app:itemTitle="@string/invited_send_gift"
+            app:showMarginBottom="false" />
+
+        <View style="@style/FineLineC4Style"
+            android:layout_marginTop="9dp"/>
+
+        <com.feibo.snacks.view.widget.BaseItemLayout
+            android:id="@+id/item_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintType="onlyMsg"
+            app:itemDrawable="@drawable/icon_service"
+            app:itemTitle="@string/snacks_official_service"
+            app:messageHintTitle="@string/snacks_official_service_phone" />
+
+        <com.feibo.snacks.view.widget.BaseItemLayout
+            android:id="@+id/item_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintType="noHint"
+            app:itemDrawable="@drawable/icon_feedback"
+            app:itemTitle="@string/suggestion_feedback"
+            app:showMarginBottom="true" />
+    </LinearLayout>
+
+</ScrollView>

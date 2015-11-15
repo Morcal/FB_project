@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <include
+        android:id="@+id/orders_detail_footer_pay"
+        layout="@layout/layout_orders_detail_footer_pay"/>
+
+    <LinearLayout
+        android:id="@+id/orders_detail_footer_pay_flow"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/b1"
+        android:paddingRight="@dimen/b1"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"></LinearLayout>
+</LinearLayout>

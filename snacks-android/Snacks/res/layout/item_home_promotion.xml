@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/small_module_distance">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.feibo.snacks.view.widget.HWRadioImageView xmlns:app="http://schemas.android.com/apk/res/com.feibo.snacks"
+            android:id="@+id/item_home_promotion_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_class_brand612_250"
+            app:hwRadio="0.408" />
+
+        <ImageView
+            android:id="@+id/item_goods_empty"
+            android:layout_width="@dimen/sell_empty"
+            android:layout_height="@dimen/sell_empty"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_end"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/small_module_distance"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/item_home_promotion_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_sales"
+            android:gravity="center"
+            android:text="标题"
+            android:singleLine="true"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/s5" />
+
+        <TextView
+            android:id="@+id/item_home_promotion_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/item_home_promotion_discount"
+            android:text="标题"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s8" />
+
+        <TextView
+            android:id="@+id/item_home_promotion_tag_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_clock"
+            android:drawablePadding="5dp"
+            android:text="标题"
+            android:singleLine="true"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/s5" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/FineLineC4Style" />
+
+</LinearLayout>

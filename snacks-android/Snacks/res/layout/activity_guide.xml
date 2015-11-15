@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/launch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_launcher"
+        android:scaleType="fitXY" />
+
+    <com.feibo.snacks.view.widget.IndicatorView
+        xmlns:app="http://schemas.android.com/apk/res/com.feibo.snacks"
+        android:id="@+id/guide_indicator"
+        android:layout_width="102dp"
+        android:layout_height="25dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_guide_point"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        app:count="0"
+        app:drawable="@drawable/ic_guide_indicator"
+        app:position="0"
+        app:space="12dp" />
+
+</FrameLayout>

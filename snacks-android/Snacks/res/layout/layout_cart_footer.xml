@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_cannot_shopping"
+        android:textColor="@color/c8"
+        android:textSize="@dimen/s4"
+        android:layout_marginLeft="@dimen/b1"
+        android:layout_marginTop="@dimen/s7"
+        android:layout_marginBottom="@dimen/s5"/>
+
+    <View style="@style/FineLineMarginStyle"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/cart_footer_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <Button
+        android:id="@+id/layout_cart_footer_delete_all"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="清空不可购买的商品"
+        android:background="@drawable/btn_orders_cancle"
+        android:focusable="true"
+        android:textColor="@color/c8"
+        android:textSize="@dimen/s4" />
+
+
+
+
+</LinearLayout>

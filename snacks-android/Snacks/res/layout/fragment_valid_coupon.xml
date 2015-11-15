@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/c5"
+    >
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/coupon_both_size"
+        android:paddingRight="@dimen/coupon_both_size"
+        android:layout_marginTop="@dimen/coupon_both_size"
+        android:layout_marginBottom="@dimen/coupon_both_size"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="@dimen/coupon_both_size"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"/>
+
+</RelativeLayout>

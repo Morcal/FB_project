@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="color_one">#89D2C9</color>
+    <color name="color_two">#52C2B4</color>
+    <color name="color_three">#262626</color>
+    <color name="color_four">#8C8C8C</color>
+    <color name="color_five">#FF6166</color>
+    <color name="color_six">#D6D6D6</color>
+    <color name="color_seven">#F0F0F0</color>
+    <color name="color_nine">#FFCA7E</color>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="topic">#89D2C9</drawable>
+    <color name="shadow">#595959</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#9Fff0000</color>
+    <color name="light_red">#9FFF6166</color>
+
+    <!-- v2.0-->
+    <color name="c1">#FF2D4B</color>
+    <color name="c2">#000000</color>
+    <color name="c2_alpha_60">#99000000</color>
+    <color name="c3">#A0A0A0</color>
+    <color name="c4">#E2E2E2</color>
+    <color name="c5">#F8F8F8</color>
+    <color name="c6">#FFFFFF</color>
+    <color name="c7">#D6D6D6</color>
+    <color name="c8">#353535</color>
+    <color name="c8_alpha_60">#99353535</color>
+    <color name="c9">#EE1B39</color>
+    <color name="c10">#606060</color>
+
+    <color name="toggle_button_left">#ffd9d9d9</color>
+    <color name="toggle_button_right">#ffeec900</color>
+
+</resources>

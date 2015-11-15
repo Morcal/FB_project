@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/detail_sides_left_distance">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.feibo.snacks.view.widget.RoundImageView xmlns:jayden="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_comment_icon"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_comment_icon" />
+
+            <TextView
+                android:id="@+id/item_comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="足球宝贝"
+                android:textColor="@color/color_three"
+                android:textSize="@dimen/size_four" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s8" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_comment_divider"
+        style= "@style/FineLineMarginStyle"
+        android:background="@drawable/bg_dashed"/>
+
+</LinearLayout>

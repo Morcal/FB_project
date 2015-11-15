@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/c9" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/btn_login_corner_size"
+        android:bottomRightRadius="@dimen/btn_login_corner_size"
+        android:topLeftRadius="@dimen/btn_login_corner_size"
+        android:topRightRadius="@dimen/btn_login_corner_size" />
+
+</shape>

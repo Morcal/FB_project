@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/orders_head"
+        layout="@layout/layout_base_header"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_orders"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/bg_radiogroup"
+        android:orientation="horizontal"
+        android:padding="-2dp" >
+
+        <RadioButton
+            android:id="@+id/radio_btn_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_orders_tab"
+            android:button="@null"
+            android:checked="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/orders_all_orders"
+            android:textColor="@drawable/bg_orders_tab_text"
+            android:textSize="@dimen/s8" />
+
+        <RadioButton
+            android:id="@+id/radio_btn_wait_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_orders_tab"
+            android:button="@null"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/orders_wait_pay"
+            android:textColor="@drawable/bg_orders_tab_text"
+            android:textSize="@dimen/s8" />
+
+        <RadioButton
+            android:id="@+id/ratio_btn_wait_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_orders_tab"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/orders_wait_send"
+            android:textColor="@drawable/bg_orders_tab_text"
+            android:textSize="@dimen/s8" />
+
+        <RadioButton
+            android:id="@+id/ratio_btn_wait_receive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_orders_tab"
+            android:button="@null"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/orders_wait_receipt"
+            android:textColor="@drawable/bg_orders_tab_text"
+            android:textSize="@dimen/s8" />
+
+        <RadioButton
+            android:id="@+id/ratio_btn_wait_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_orders_tab"
+            android:button="@null"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/orders_wait_comment"
+            android:textColor="@drawable/bg_orders_tab_text"
+            android:textSize="@dimen/s8" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

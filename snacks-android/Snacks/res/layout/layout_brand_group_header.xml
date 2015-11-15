@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_new_subject_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp">
+
+    <com.feibo.snacks.view.widget.HWRadioImageView
+        android:id="@+id/subject_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_class_brandteam_640_256"
+        app:hwRadio="0.4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_alignBottom="@id/subject_img"
+        android:background="@color/c8_alpha_60">
+
+        <TextView
+            android:id="@+id/brand_group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:maxEms="15"
+            android:paddingLeft="@dimen/both_sides_distance"
+            android:shadowColor="#ff000000"
+            android:shadowDx="1"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:text="@string/brand_title"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/s7" />
+
+        <TextView
+            android:id="@+id/brand_group_tag_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_clocks"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/module_distance"
+            android:text="剩3小时"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/s7" />
+    </RelativeLayout>
+</RelativeLayout>

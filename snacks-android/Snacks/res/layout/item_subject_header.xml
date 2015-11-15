@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="3dp">
+
+    <com.feibo.snacks.view.widget.HWRadioImageView
+        xmlns:jayden="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/subject_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_projects_small300_150"
+        jayden:hwRadio="0.5"/>
+
+    <LinearLayout
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_subject2x"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/subject_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#ff000000"
+            android:shadowDx="1"
+            android:shadowDy="0"
+            android:shadowRadius="1"
+            android:text="儿童数据"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/s2" />
+    </LinearLayout>
+
+</RelativeLayout>

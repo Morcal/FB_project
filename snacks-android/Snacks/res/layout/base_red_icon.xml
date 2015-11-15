@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:background="@color/c6">
+
+
+    <LinearLayout
+        android:id="@+id/iv_img_parant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            tools:src="@drawable/icon_delivery" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iv_img_parant"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_home_number"
+        android:gravity="center"
+        android:textColor="@color/c6"
+        android:textSize="@dimen/s5"
+        android:visibility="gone"
+        tools:text="99" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_img_parant"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/c8"
+        android:textSize="@dimen/s7"
+        tools:text="标题" />
+</RelativeLayout>

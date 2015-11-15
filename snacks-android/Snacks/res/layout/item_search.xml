@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView 
+            android:id="@+id/search_history_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s8"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:paddingTop="18dp"
+        	android:paddingBottom="18dp"
+            />
+        <ImageButton 
+            android:id="@+id/search_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_header_search_cancle"
+            android:background="@color/white"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:layout_centerVertical="true"
+            android:paddingTop="18dp"
+        	android:paddingBottom="18dp"
+        	android:paddingRight="10dp"
+        	android:paddingLeft="15dp"
+            />
+    </RelativeLayout>
+
+    <View style= "@style/FineLineC4Style"/>
+</LinearLayout>

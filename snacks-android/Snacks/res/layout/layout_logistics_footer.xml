@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/c5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流跟踪"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s4"
+            android:layout_marginLeft="17dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="17dp"
+            android:id="@+id/textView3" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/c5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/logistics_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/b1"
+            android:layout_marginLeft="25dp">
+
+            <TextView
+                android:id="@+id/logistics_first_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c1"
+                android:textSize="@dimen/s4"
+                android:text="@string/default_send_goods"
+                 />
+
+            <TextView
+                android:id="@+id/logistics_first_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s4"
+                android:textColor="@color/c3"
+                android:layout_marginTop="10dp"
+                android:text="2015-06-30 14:37:42"
+                android:layout_below="@+id/logistics_first_info"
+                android:layout_alignLeft="@+id/logistics_first_info"
+                android:layout_alignStart="@+id/logistics_first_info" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent"
+            android:background="@color/c5"
+            android:layout_marginLeft="22dp"
+            android:layout_alignTop="@id/logistics_info"
+            android:layout_alignBottom="@id/logistics_info"
+            android:id="@+id/imageView8" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/logistics_info"
+            android:layout_alignBottom="@id/logistics_info"
+            android:layout_marginLeft="@dimen/b1"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_circle_logistics"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/logistics_view_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+</LinearLayout>

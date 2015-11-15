@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/empty_orders_head"
+        layout="@layout/layout_cart_head"/>
+
+    <ImageView
+        android:id="@+id/orders_empty_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/empty_orders_head"
+        android:background="@drawable/icon_order_empty"
+        android:layout_centerHorizontal="true"
+       />
+
+    <TextView
+        android:id="@+id/fragment_empty_remind_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s4"
+        android:textColor="@color/c3"
+        android:layout_marginTop="20dp"
+        android:text="@string/orders_empty"
+        android:layout_below="@+id/orders_empty_icon"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/fragment_empty_remind_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s4"
+        android:textColor="@color/c3"
+        android:text="@string/orders_empty_recommend"
+        android:layout_below="@+id/fragment_empty_remind_content1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp" />
+
+    <Button
+        android:id="@+id/fragment_orders_empty_entry_home"
+        android:layout_width="144dp"
+        android:layout_height="34dp"
+        android:text="随便逛逛"
+        android:textColor="@color/c6"
+        android:textSize="@dimen/s8"
+        android:background="@drawable/btn_account_select"
+        android:layout_below="@+id/fragment_empty_remind_content2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

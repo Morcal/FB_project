@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_flavor"
+    android:layout_width="81dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="9dp"
+    android:paddingTop="9dp"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp"
+    android:layout_marginBottom="17dp"
+    android:text="原味"
+    android:gravity="center"
+    android:textColor="@drawable/item_taste_select_color"
+    android:textSize="@dimen/s3"
+    android:background="@drawable/bg_item_taste"/>
+

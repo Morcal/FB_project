@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_base_item_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/base_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_item_layout_43"
+        android:paddingLeft="@dimen/base_item_layout_15"
+        android:paddingRight="@dimen/base_item_layout_15">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="13dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s3"
+            tools:drawableLeft="@drawable/icon_order"
+            tools:text="消息" />
+
+        <RelativeLayout
+            android:id="@+id/layout_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/icon_arrow"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/hint_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/img_arrow"
+                android:background="@drawable/bg_home_number"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/c6"
+                android:textSize="@dimen/s5"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_tx_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_arrow"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/message_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c3"
+                    android:textSize="@dimen/s5"
+                    tools:ignore="HardcodedText"
+                    tools:text="提示语" />
+
+                <ImageView
+                    android:id="@+id/title_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/round_red"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.feibo.snacks.view.widget.LToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="@dimen/base_item_layout_60"
+            android:layout_height="@dimen/base_item_layout_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/base_item_layout_2"
+            android:visibility="gone"
+            app:leftBackground="@color/toggle_button_left"
+            app:rightBackground="@color/toggle_button_right" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/line_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/line"
+            style="@style/FineLineC4Style" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/margin_bottom"
+        style="@style/BoldLineStyle"
+        android:visibility="gone" />
+
+</LinearLayout>

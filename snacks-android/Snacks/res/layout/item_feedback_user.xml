@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/feedback_item_padding_right"
+    android:paddingTop="@dimen/feedback_item_padding_top"
+    android:paddingRight="@dimen/feedback_edittext_margin">
+
+    <com.feibo.snacks.view.widget.CircleImageView
+        android:id="@+id/item_feedback_icon"
+        android:layout_width="@dimen/feedback_avatar_size"
+        android:layout_height="@dimen/feedback_avatar_size"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/default_photo" />
+
+    <TextView
+        android:id="@+id/item_feedback_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_feedback_gray"
+        android:layout_marginRight="@dimen/feedback_edittext_top_bottom"
+        android:paddingTop="@dimen/feedback_text_padding"
+        android:paddingRight="@dimen/feedback_edittext_margin"
+        android:paddingBottom="@dimen/feedback_text_padding"
+        android:paddingLeft="@dimen/feedback_text_padding"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_toLeftOf="@id/item_feedback_icon"
+        android:text="呵呵"
+        android:textColor="@color/c8"
+        android:textSize="@dimen/s8" />
+
+
+    
+</RelativeLayout>

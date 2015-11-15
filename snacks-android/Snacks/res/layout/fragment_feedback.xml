@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:background="@color/white"
+        >
+
+        <ListView
+            android:id="@+id/feedback_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/feedback_item_padding_top"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:listSelector="@android:color/transparent" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fine_line_height"
+            android:background="@color/c7"
+            />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_seven"
+            android:paddingTop="@dimen/feedback_edittext_top_bottom"
+            android:paddingBottom="@dimen/feedback_edittext_top_bottom"
+            android:paddingLeft="@dimen/feedback_edittext_margin"
+            android:paddingRight="@dimen/feedback_send_margin"
+            >
+            <EditText 
+                android:id="@+id/feedback_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_feedback_editor"
+                android:hint="@string/feedback_hint"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/s8"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/feedback_edittext_both_distance"
+                />
+            
+            <Button 
+                android:id="@+id/feedback_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c2"
+                android:textSize="@dimen/s3"
+                android:background="@null"
+                android:padding="@dimen/feedback_send_padding"
+                android:layout_marginLeft="@dimen/feedback_send_margin"
+                android:text="@string/feedback_send"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

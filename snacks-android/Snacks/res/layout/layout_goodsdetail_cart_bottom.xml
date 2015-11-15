@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goods_detail_cart_operation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/c4"
+    android:orientation="horizontal"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/head_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_btn_cart"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/home_car"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_car" />
+        <TextView
+            android:id="@+id/home_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_toRightOf="@id/home_car"
+            android:layout_alignTop="@id/home_car"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-6dp"
+            android:gravity="center"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/s6"
+            android:background="@drawable/bg_home_number"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/goods_detail_addtocart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_btn_add_cart"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:text="@string/add_to_cart"
+        android:textSize="@dimen/s2"
+        android:textColor="@color/c6"/>
+</LinearLayout>

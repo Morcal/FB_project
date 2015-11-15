@@ -1,0 +1,135 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':BaseWebViewActivity')
+    compile('com.feibo:fbcore:1.1.2') {
+        exclude module: 'support-v4', group: 'com.android.support'
+        exclude module: 'support-annotations', group: 'com.android.support'
+    }
+    compile 'com.feibo:social-component:1.0.5'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.upyun:java-sdk:3.1'
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    defaultConfig {
+        applicationId "com.feibo.snacks"
+        minSdkVersion 9
+//        targetSdkVersion 22
+        versionCode 13
+        versionName "2.2"
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "feibo"] //默认渠道号
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file(KEYSTORE)
+            storePassword STORE_PASSWORD
+            keyAlias KEYALIAS
+            keyPassword KEY_PASSWORD
+        }
+
+        myConfig {
+            storeFile file(KEYSTORE)
+            storePassword STORE_PASSWORD
+            keyAlias KEYALIAS
+            keyPassword KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            signingConfig signingConfigs.myConfig
+
+            applicationVariants.all {
+                variant -> variant.outputs.each {
+                    output ->
+                        def outputFile = output.outputFile
+                        def fileName = "${variant.productFlavors[0].name}_${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+    }
+
+    // 市场渠道
+    flavors()
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    packagingOptions{
+        exclude 'LICENSE.txt'
+    }
+}
+
+def flavors() { //多渠道打包
+
+    if (market_channels.trim().length() == 0) {
+        return
+    }
+
+    String[] channels = market_channels.split(",")
+
+    if (channels == null || channels.length == 0) {
+        return
+    }
+
+    channels.each {
+        channel ->
+            android.productFlavors.create(channel, {
+                manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+            })
+    }
+}
+
+def proguardOn() {
+    return "true".equals(proguard_on)
+}
+
+tasks.withType(JavaCompile){
+    options.encoding="utf-8"
+}
+

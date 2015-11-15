@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dialog_remind_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_remind_dialog"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+
+    <TextView
+        android:id="@+id/dialog_remind_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/c8"
+        android:textSize="@dimen/s2"
+        android:visibility="gone"
+        tools:text="@string/dialog_title_choose_address" />
+
+    <TextView
+        android:id="@+id/dialog_remind_content_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/c8"
+        android:lineSpacingMultiplier="1.4"
+        android:textSize="@dimen/s8"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/dialog_remind_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <View
+        android:id="@+id/dialog_remind_margin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <View
+        android:id="@+id/dialog_remind_cut_line_ver"
+        style="@style/FineLineC7Style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_remind_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s8"
+            android:visibility="gone"
+            tools:text="@string/dialog_cancle" />
+
+        <View
+            android:id="@+id/dialog_remind_btn_cut_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/c7"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog_remind_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s8"
+            android:visibility="gone"
+            tools:text="@string/dialog_confirm" />
+    </LinearLayout>
+
+</LinearLayout>

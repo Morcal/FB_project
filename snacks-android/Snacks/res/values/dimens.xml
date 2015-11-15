@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+
+    <dimen name="fine_line_height">0.5dp</dimen>
+    <dimen name="blod_line_height">9dp</dimen>
+
+    <dimen name="size_one">24sp</dimen>
+    <dimen name="size_two">21sp</dimen>
+    <dimen name="size_three">18sp</dimen>
+    <dimen name="size_four">17sp</dimen>
+    <dimen name="size_five">14sp</dimen>
+    <dimen name="size_six">20sp</dimen>
+    <dimen name="size_seven">16sp</dimen>
+
+    <dimen name="half_both_sides_distance">5dp</dimen>
+    <dimen name="both_sides_distance">10dp</dimen>
+    <dimen name="module_distance">20dp</dimen>
+    <dimen name="small_module_distance">15dp</dimen>
+    <dimen name="title_height">44dp</dimen>
+    <dimen name="home_item_title_height">30dp</dimen>
+    <dimen name="home_spcial_height">190dp</dimen>
+
+    <dimen name="goods_list_of_size">148dp</dimen>
+	<dimen name="goods_list_line_spacing">6dp</dimen>
+	<dimen name="subject_list_line_spacing">6dp</dimen>
+	
+	<dimen name="dialog_remind_width">250dp</dimen>
+	<dimen name="dialog_remind_height">125dp</dimen>
+	<dimen name="dialog_remind_btn_height">40dp</dimen>
+	<dimen name="toast_height">37dp</dimen>
+	
+	<dimen name="dialog_share_platform_distance">10dp</dimen>
+	<dimen name="dialog_share_both_sides_distance">25dp</dimen>
+	<dimen name="dialog_platform_both_distance">22dp</dimen>
+	
+	<dimen name="subject_detail_foot_distance">8dp</dimen>
+	<dimen name="subject_detail_foot_margin_top">30dp</dimen>
+	<dimen name="subject_detail_foot_margin_bottom">20dp</dimen>
+	<dimen name="subject_detail_foot_between_distance">47dp</dimen>
+	
+	<dimen name="feedback_edittext_top_bottom">8dp</dimen>
+	<dimen name="feedback_edittext_both_distance">13dp</dimen>
+	<dimen name="feedback_edittext_margin">15dp</dimen>
+	<dimen name="feedback_send_margin">5dp</dimen>
+	<dimen name="feedback_send_padding">10dp</dimen>
+	<dimen name="feedback_avatar_size">45dp</dimen>
+	<dimen name="feedback_text_padding">11dp</dimen>
+	<dimen name="feedback_item_padding_top">20dp</dimen>
+	<dimen name="feedback_item_padding_right">30dp</dimen>
+
+	<dimen name="person_platform_select_height">128dp</dimen>
+  
+	<dimen name="login_three_btn_magin">24dp</dimen>
+    <dimen name="three_icon_size">40dp</dimen>
+
+    <!-- v2.0-->
+    <dimen name="s1">18dp</dimen>
+    <dimen name="s2">16dp</dimen>
+    <dimen name="s3">15dp</dimen>
+    <dimen name="s4">13dp</dimen>
+    <dimen name="s5">11dp</dimen>
+    <dimen name="s6">10dp</dimen>
+    <dimen name="s7">12dp</dimen>
+    <dimen name="s8">14dp</dimen>
+    <dimen name="b1">15dp</dimen>
+    <dimen name="b2">7dp</dimen>
+
+    <dimen name="sell_empty">65dp</dimen>
+
+    <dimen name="both_sides_new_distance">7dp</dimen>
+    <dimen name="both_base_item_distance">4dp</dimen>
+    <!-- detail page sides left distance-->
+    <dimen name="detail_sides_left_distance">15dp</dimen>
+
+    <!-- create address-->
+    <dimen name="create_address_height">43dp</dimen>
+    <dimen name="create_address_item_margin">15dp</dimen>
+    <dimen name="create_address_line_margin">7dp</dimen>
+
+    <!-- base_Item_layout-->
+    <dimen name="base_item_layout_43">43dp</dimen>
+    <dimen name="base_item_layout_15">15dp</dimen>
+    <dimen name="base_item_layout_60">60dp</dimen>
+    <dimen name="base_item_layout_30">30dp</dimen>
+    <dimen name="base_item_layout_2">2dp</dimen>
+
+    <!-- 我的 -->
+    <dimen name="person_head_hight">180dp</dimen>
+    <dimen name="person_avatar_size">74dp</dimen>
+    <dimen name="person_btn_height">119dp</dimen>
+    <dimen name="person_btn_width">34dp</dimen>
+    <dimen name="person_avatar_margin_top">35dp</dimen>
+    <dimen name="person_avatar_outline_size">2dp</dimen>
+    <dimen name="person_order_state_item_hight">54dp</dimen>
+
+    <!-- share dialog -->
+    <dimen name="share_module_distance">15dp</dimen>
+    <dimen name="share_both_module_distance">20dp</dimen>
+    <dimen name="platform_side_distance">25dp</dimen>
+
+    <!-- 设置 -->
+    <dimen name="about_line_spacing_extra">8dp</dimen>
+    <dimen name="about_padding_left">15dp</dimen>
+    <dimen name="about_padding_top">20dp</dimen>
+    <dimen name="about_contact_top">29dp</dimen>
+    <dimen name="setting_btn_margin_top">25dp</dimen>
+    <dimen name="setting_btn_height">34dp</dimen>
+
+    <!-- 圆角矩形 -->
+    <dimen name="btn_login_corner_size">5dp</dimen>
+    <dimen name="toast_padding">13dp</dimen>
+    <dimen name="toast_padding_top">8dp</dimen>
+    <dimen name="toast_padding_bottom">6dp</dimen>
+    <dimen name="progress_msg_paddingtop">10dp</dimen>
+    <dimen name="progress_min_width">100dp</dimen>
+    <dimen name="toast_margin">60dp</dimen>
+    <dimen name="toast_line_spacing_extra">5dp</dimen>
+
+    <!-- 登录相关 -->
+    <dimen name="btn_login_height">34dp</dimen>
+
+    <!-- 交易成功 -->
+    <dimen name="trade_success_padding">25dp</dimen>
+    <dimen name="trade_success_both_sides">15dp</dimen>
+    <dimen name="icon_text_distance">8dp</dimen>
+    <dimen name="result_button_distance">8dp</dimen>
+    <dimen name="trade_result_btn_padding">10dp</dimen>
+
+    <!--物流信息-->
+    <dimen name="logistic_info_item_both_size">15dp</dimen>
+
+    <!-- v2.1-->
+    <dimen name="s9">21sp</dimen>
+    <!-- 我的优惠券 -->
+    <dimen name="coupon_both_size">15dp</dimen>
+    <dimen name="rmb_margin_top">42dp</dimen>
+    <dimen name="coupon_name_margin_top">11dp</dimen>
+    <dimen name="coupon_valid_price_margin_top">14dp</dimen>
+    <dimen name="coupon_use_range_margin_top">7dp</dimen>
+    <dimen name="coupon_valid_time_margin_bottom">12dp</dimen>
+    <dimen name="coupon_detail_width">52dp</dimen>
+    <dimen name="invalid_img_margin_left">32dp</dimen>
+    <dimen name="invalid_cause_margin_top">18dp</dimen>
+    <dimen name="invalid_cause_margin_left">10dp</dimen>
+</resources>

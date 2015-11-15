@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/head_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/btn_header_back" />
+
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxEms="11"
+            android:singleLine="true"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s1" />
+
+        <TextView
+            android:id="@+id/head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/s8"/>
+    </RelativeLayout>
+
+    <View style="@style/FineLineC7Style" />
+
+    <View style="@style/FineLineC4Style" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/c6"
+        android:padding="0dp" >
+
+        <RadioButton
+            android:id="@+id/valid_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab"
+            android:button="@null"
+            android:checked="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/valid_coupon"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s3" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/c4"
+            android:gravity="center_vertical" />
+
+        <RadioButton
+            android:id="@+id/invalid_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tab"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/invalid_coupon"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s3" />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

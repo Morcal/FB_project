@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/c5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.feibo.snacks.view.widget.SimpleItemView
+            android:id="@+id/item_cost_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            app:name_text="商品总额"
+            app:item_padding="7dp"
+            app:value_size="@dimen/s8"
+            app:has_arrow="false"/>
+
+        <com.feibo.snacks.view.widget.SimpleItemView
+            android:id="@+id/item_cost_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:value_size="@dimen/s8"
+            app:name_text="+运费"
+            app:item_padding="7dp"
+            app:has_arrow="false"/>
+
+        <com.feibo.snacks.view.widget.SimpleItemView
+            android:id="@+id/item_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:name_text="-优惠券"
+            app:item_padding="7dp"
+            app:has_arrow="false"
+            app:can_pressed="false"/>
+
+        <com.feibo.snacks.view.widget.SimpleItemView
+            android:id="@+id/item_coupon_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:name_text="-优惠"
+            app:item_padding="7dp"
+            app:has_arrow="false"
+            app:can_pressed="false"/>
+
+        <com.feibo.snacks.view.widget.SimpleItemView
+            android:id="@+id/item_cost_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:name_text="实付款(含运费)"
+            app:value_size="@dimen/s8"
+            app:value_color="@color/c1"
+            app:item_padding="7dp"
+            app:has_arrow="false"
+            app:has_divider="true"/>
+    </LinearLayout>
+
+</LinearLayout>

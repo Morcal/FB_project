@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.feibo.snacks.view.widget.pullToRefresh.PullToRefreshListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/half_both_sides_distance"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"/>
+
+    <com.feibo.snacks.view.widget.CurtainView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_category_curtain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/fragment_category_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:numColumns="4"
+            android:paddingLeft="@dimen/half_both_sides_distance"
+            android:paddingRight="@dimen/half_both_sides_distance"
+            android:paddingTop="@dimen/both_sides_distance"
+            android:paddingBottom="@dimen/both_sides_distance"
+            android:stretchMode="columnWidth" />
+        <com.feibo.snacks.view.widget.FocusView
+            android:id="@+id/focusview"
+            android:layout_below="@id/fragment_category_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="#90000000"/>
+    </com.feibo.snacks.view.widget.CurtainView>
+
+    <ImageView
+        android:id="@+id/scroll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:src="@drawable/btn_top"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fragment_collect_delete"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#9FFF6166"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_three"
+        android:visibility="gone" />
+
+</RelativeLayout>

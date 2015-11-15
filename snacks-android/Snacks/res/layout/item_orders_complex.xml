@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_orders_complex_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 订单头部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/b1"
+        android:layout_marginRight="@dimen/b1">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_shop" />
+
+        <!--店名-->
+        <TextView
+            android:id="@+id/item_orders_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:maxLines="1"
+            android:text="萨法旗舰店"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s5" />
+
+        <TextView
+            android:id="@+id/item_orders_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView3"
+            android:text="未付款"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/s5" />
+
+    </RelativeLayout>
+
+    <View style="@style/FineLineMarginStyle" />
+
+    <RelativeLayout
+        android:id="@+id/board_order_image"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="@dimen/b1"
+        android:layout_marginLeft="@dimen/b1"
+        android:layout_marginTop="@dimen/b1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/item_orders_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/item_orders_cehua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/b1"
+            android:padding="2dp"
+            android:src="@drawable/btn_cehua" />
+    </RelativeLayout>
+
+    <View style="@style/FineLineMarginStyle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/b1"
+        android:layout_marginRight="@dimen/b1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_orders_complex_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共1件商品"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s4" />
+
+        <TextView
+            android:id="@+id/item_orders_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥104.00"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/s4" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/item_orders_pay"
+            android:layout_toStartOf="@+id/item_orders_pay"
+            android:text="实付 : "
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s4" />
+
+        <TextView
+            android:id="@+id/item_orders_freight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:text="运费 : ￥8.00"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s4" />
+    </RelativeLayout>
+
+    <View style="@style/FineLineMarginStyle" />
+
+    <RelativeLayout
+        android:id="@+id/item_orders_opt"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginRight="@dimen/b1"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/item_orders_opt_right"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/b1"
+            android:background="@drawable/btn_account_select"
+            android:focusable="true"
+            android:text="去结算"
+            android:textColor="@color/c6"
+            android:textSize="@dimen/s4" />
+
+        <Button
+            android:id="@+id/item_orders_opt_left"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_orders_opt_right"
+            android:background="@drawable/btn_orders_cancle"
+            android:focusable="true"
+            android:layout_marginLeft="@dimen/b1"
+            android:text="@string/orders_wait_comment"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s4" />
+
+        <Button
+            android:id="@+id/item_orders_opt_extra"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_orders_opt_left"
+            android:background="@drawable/btn_orders_cancle"
+            android:focusable="true"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s4" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="@dimen/b2"
+        android:layout_marginRight="@dimen/b2"
+        android:background="@color/c5" />
+
+</LinearLayout>

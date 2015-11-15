@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c5"
+    android:orientation="vertical">
+
+    <View style="@style/BoldLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/c6">
+        <LinearLayout
+            android:id="@+id/btn_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_base_item_layout"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="头像"
+                android:textSize="@dimen/s3"
+                android:textColor="@color/c8"
+                android:paddingLeft="15dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <com.feibo.snacks.view.widget.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/default_photo"
+                app:circle_border_color="@color/c6"
+                app:circle_border_width="@dimen/person_avatar_outline_size"
+                app:circle_border_overlay="false"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/FineLineC4Style"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <LinearLayout
+            android:id="@+id/btn_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_base_item_layout"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="昵称"
+                android:textSize="@dimen/s3"
+                android:textColor="@color/c8"
+                android:paddingLeft="15dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/c3"
+                android:textSize="@dimen/s5"
+                tools:ignore="HardcodedText"
+                tools:text="提示语" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_arrow"/>
+        </LinearLayout>
+
+        <View style="@style/FineLineC4Style"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+    </LinearLayout>
+</LinearLayout>

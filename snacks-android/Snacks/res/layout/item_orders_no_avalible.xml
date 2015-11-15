@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/b1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="@dimen/b1"
+        android:layout_marginTop="@dimen/b1">
+        <!-- 选择按钮-->
+        <ImageView
+            android:id="@+id/item_cart_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:padding="10dp"
+            android:src="@drawable/btn_cart_select" />
+
+        <!-- 商品图标-->
+
+        <com.feibo.snacks.view.widget.ratioroundimageview.RoundedImageView
+            android:id="@+id/item_cart_goods_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/item_cart_select"
+            android:layout_toRightOf="@+id/item_cart_select"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_bg_150_150"
+            app:riv_border_color="@color/c7"
+            app:riv_border_width="@dimen/fine_line_height"
+            app:riv_oval="false" />
+
+        <!--商品失效-->
+        <TextView
+            android:id="@+id/item_cart_goods_failure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_failure"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/s5"
+            android:layout_toRightOf="@id/item_cart_goods_icon"
+            android:layout_alignBottom="@id/item_cart_goods_icon"/>
+
+        <!-- 商品现价-->
+        <TextView
+            android:id="@+id/item_cart_price_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="￥88.00"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/s4" />
+
+        <!-- 商品原价-->
+        <TextView
+            android:id="@+id/item_cart_price_orign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_cart_price_now"
+            android:singleLine="true"
+            android:text="￥146.00"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/s6" />
+
+        <!-- 删除按钮-->
+        <ImageView
+            android:id="@+id/item_cart_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_cart_goods_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="6dp"
+            android:src="@drawable/btn_cart_delete" />
+
+        <!--商品标题-->
+        <TextView
+            android:id="@+id/item_cart_goods_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/item_cart_price_now"
+            android:layout_toRightOf="@id/item_cart_goods_icon"
+            android:maxLines="2"
+            android:text="玛丽德手工法式马卡龙甜点法国进口撩高点"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/s5" />
+
+        <!--商品口味-->
+        <TextView
+            android:id="@+id/item_cart_kinds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_cart_goods_title"
+            android:layout_alignStart="@+id/item_cart_goods_title"
+            android:layout_below="@+id/item_cart_goods_title"
+            android:text="口味 : 原味"
+            android:textColor="@color/c3"
+            android:textSize="@dimen/s5" />
+
+    </RelativeLayout>
+
+    <View style="@style/FineLineMarginStyle" />
+
+</LinearLayout>

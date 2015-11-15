@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c5">
+
+    <RelativeLayout
+        android:id="@+id/fragment_orders_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/c4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/item_orders_detail_btn_first"
+            android:layout_width="78dp"
+            android:layout_height="34dp"
+            android:text="去结算"
+            android:textSize="@dimen/s4"
+            android:textColor="@color/c6"
+            android:layout_marginRight="@dimen/b1"
+            android:background="@drawable/btn_account_select"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/item_orders_detail_btn_second"
+            android:layout_width="78dp"
+            android:layout_height="34dp"
+            android:text="@string/orders_wait_comment"
+            android:textSize="@dimen/s4"
+            android:textColor="@color/c8"
+            android:layout_marginRight="@dimen/b2"
+            android:background="@drawable/btn_orders_cancle"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_orders_detail_btn_first"
+            android:layout_toStartOf="@+id/item_orders_detail_btn_first" />
+
+        <Button
+            android:id="@+id/item_orders_detail_btn_third"
+            android:layout_width="78dp"
+            android:layout_height="34dp"
+            android:text="@string/orders_wait_comment"
+            android:textSize="@dimen/s4"
+            android:textColor="@color/c8"
+            android:layout_marginRight="@dimen/b2"
+            android:background="@drawable/btn_orders_cancle"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_orders_detail_btn_second"
+            android:layout_toStartOf="@+id/item_orders_detail_btn_second" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fragment_orders_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@android:color/transparent"
+        android:layout_above="@+id/fragment_orders_detail_bottom"
+        android:scrollbars="none" />
+
+</RelativeLayout>

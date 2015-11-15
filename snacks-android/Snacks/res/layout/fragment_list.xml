@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/scroll_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:src="@drawable/btn_top"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fragment_collect_delete"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_red"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/c6"
+        android:textSize="@dimen/s2"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/fragment_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cart_list"
+        android:visibility="gone"
+        layout="@layout/layout_orders_empty"/>
+
+</RelativeLayout>

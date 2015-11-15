@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c5"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line_address" />
+
+    /**收货地址模块**/
+
+    <RelativeLayout
+        android:id="@+id/orders_confirm_address_viewgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/b1"
+        android:paddingRight="@dimen/b1">
+
+        <ImageView
+            android:id="@+id/orders_detail_address_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_address" />
+
+        <TextView
+            android:id="@+id/orders_confirm_no_select_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/s3"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/orders_detail_address_icon"
+            android:layout_marginLeft="10dp"
+            android:text="@string/no_select_address"/>
+        /**收货人**/
+
+        <TextView
+            android:id="@+id/orders_confirm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/orders_detail_address_icon"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s3" />
+        /**联系人手机**/
+
+        <TextView
+            android:id="@+id/orders_confirm_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/orders_confirm_name"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/orders_confirm_name"
+            android:layout_toRightOf="@+id/orders_confirm_name"
+            android:textColor="@color/c2"
+            android:textSize="@dimen/s3" />
+        /**收货地址**/
+
+        <TextView
+            android:id="@+id/orders_confirm_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/orders_confirm_name"
+            android:layout_alignStart="@+id/orders_confirm_name"
+            android:layout_below="@+id/orders_confirm_name"
+            android:layout_marginRight="@dimen/b1"
+            android:layout_marginTop="5dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/c8"
+            android:textSize="@dimen/s7" />
+
+        <ImageView
+            android:id="@+id/orders_confirm_entry_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_arrow_right" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/line_address" />
+
+</LinearLayout>
