@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c9_white"
+    android:orientation="vertical" >
+
+    <!-- 视频详情页的作者信息 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="@dimen/p15"
+        android:paddingRight="@dimen/p15"
+        android:paddingTop="@dimen/p9"
+        android:paddingBottom="@dimen/p9">
+
+        <com.feibo.joke.view.widget.VImageView
+            android:id="@+id/iv_auother_head"
+            android:layout_width="@dimen/h42"
+            android:layout_height="@dimen/h42"
+            android:src="@drawable/default_avatar_middle" />
+
+        <TextView
+            android:id="@+id/tv_auther_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p8"
+            android:layout_marginTop="@dimen/p3"
+            android:layout_toRightOf="@id/iv_auother_head"
+            android:layout_toLeftOf="@id/btn_focus"
+            android:singleLine="true"
+            android:textColor="@color/c5_dark_grey"
+            android:textSize="@dimen/s2" />
+
+        <TextView
+            android:id="@+id/tv_publish_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/p5"
+            android:layout_marginLeft="@dimen/p8"
+            android:layout_toRightOf="@id/iv_auother_head"
+            android:text="03-23 16:42"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s6" />
+
+        <TextView
+            android:id="@+id/tv_paly_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/p5"
+            android:layout_marginLeft="@dimen/p14"
+            android:layout_toRightOf="@id/tv_publish_date"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s6" />
+
+        <com.feibo.joke.view.widget.FocusStateView
+            android:id="@+id/btn_focus"
+            android:layout_width="@dimen/h60"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/bg_video_detail_focus_selector"
+            app:focusAlreadyImage="@drawable/btn_follow_check"
+            app:focusEachImage="@drawable/btn_follow_each"
+            app:focusNullImage="@drawable/bg_video_detail_focus_selector"
+            app:focusState="focusNull"
+            app:attentionToast="true"
+            app:canCancleAttention="false" />
+    </RelativeLayout>
+    <!-- 视频详情页的视频图片 -->
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        
+            <com.feibo.joke.view.widget.videoControlView.VideoControlView
+                android:id="@+id/vcv_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c4_black"
+                android:clickable="true"
+                app:ratioHeight="1"
+                app:ratioWidth="1" />
+            <ImageView 
+                android:id="@+id/iv_love_big_for_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_big_heart"
+                android:visibility="gone"
+                />
+    </RelativeLayout>
+    <!-- 视频详情页的描述相关信息 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_video_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p15"
+            android:layout_marginRight="@dimen/p15"
+            android:layout_marginTop="@dimen/p13"
+            android:lineSpacingMultiplier="1.3"
+            android:textColor="@color/c5_dark_grey"
+            android:textSize="@dimen/s2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_video_desc"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/p16"
+            android:layout_marginTop="@dimen/p18"
+            android:orientation="horizontal" >
+
+            <LinearLayout 
+                android:id="@+id/btn_is_like"
+                android:layout_width="@dimen/h95"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_btn"
+                android:orientation="horizontal"
+                >
+                <ImageView 
+                    android:id="@+id/iv_love_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/p5"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/btn_link_normal"
+                    />
+                <TextView 
+                    android:id="@+id/tv_love_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@drawable/btn_video_share_text_color"
+                    android:textSize="@dimen/s2"
+                    android:lines="1" 
+                    />
+                
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_video_share"
+                style="@style/videoDetailButtonStyle"
+                android:layout_marginLeft="@dimen/p23"
+                android:paddingLeft="@dimen/p16"
+                android:paddingRight="@dimen/p16"
+                android:drawableLeft="@drawable/btn_share_normal"
+                android:drawableStart="@drawable/btn_share_normal"
+                android:text="@string/share" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/c8_shallow_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h37"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p15"
+            android:text="@string/commnet"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s3" />
+
+        <TextView
+            android:id="@+id/tv_comments_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p6"
+            android:text="@string/commnet"
+            android:textColor="@color/c5_dark_grey"
+            android:textSize="@dimen/s3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/c8_shallow_white" />
+
+    <TextView
+        android:id="@+id/tv_without_comments"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="赠人评论,手留菊香"
+        android:visibility="gone" />
+
+</LinearLayout>

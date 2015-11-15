@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white" >
+
+    <RelativeLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_loading"
+            android:padding="5dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p13"
+            android:text="@string/loading_text"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:id="@+id/normal_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/fail_text_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/p10"
+                android:drawableTop="@drawable/icon_no_vermicelli"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/p3"
+                android:text="该说啥呢..."
+                android:textColor="@color/c6_grey"
+                android:textSize="@dimen/s3"
+                android:lineSpacingMultiplier="1.3"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/fail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_orange"
+                android:gravity="center"
+                android:minWidth="@dimen/h150"
+                android:padding="@dimen/p10"
+                android:text="勾搭新朋友"
+                android:textColor="@color/c9_white"
+                android:textSize="@dimen/s3"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/p5"
+            android:background="@drawable/icon_not_attention"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fail_msg_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/normal_fail"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="@dimen/p10"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/p10"
+            android:text="该说啥呢..."
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s3"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+</RelativeLayout>

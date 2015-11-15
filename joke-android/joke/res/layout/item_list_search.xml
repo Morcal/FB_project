@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="34dp"
+    android:background="@color/c9_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_search_list"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:text="狗"
+        android:textColor="@color/c5_dark_grey"
+        android:textSize="@dimen/s4" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diliver_line_height"
+        android:background="@color/c8_shallow_white"/>
+</LinearLayout>

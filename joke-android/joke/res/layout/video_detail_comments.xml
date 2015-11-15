@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c9_white">
+
+    <com.feibo.joke.view.widget.InputBarView
+        android:id="@+id/send_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"/>
+    
+    <com.feibo.joke.view.widget.pullToRefresh.PullToRefreshLoadmoreListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/send_bar"
+        android:background="@color/c8_shallow_white"
+        android:divider="@color/c8_shallow_white"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" />
+    
+   <!--  <LinearLayout
+        android:id="@+id/send_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/input_send_bar" />
+    </LinearLayout> -->
+    
+</RelativeLayout>

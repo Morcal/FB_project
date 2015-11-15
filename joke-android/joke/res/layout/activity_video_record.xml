@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/c4_black"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="37dp"
+            android:layout_height="38dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/c9_white"
+            android:textSize="@dimen/s1" />
+
+        <ImageView
+            android:id="@+id/btn_light"
+            android:layout_width="46dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="7dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/btn_light" />
+
+        <ImageView
+            android:id="@+id/btn_camera"
+            android:layout_width="46dp"
+            android:layout_height="38dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/btn_camera" />
+    </LinearLayout>
+
+   	<FrameLayout
+   	    android:id="@+id/container_video"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="match_parent">
+   	</FrameLayout>
+
+</LinearLayout>

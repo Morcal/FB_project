@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tabView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c9_white"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/p5" >
+
+    <RelativeLayout
+        android:id="@+id/tab_layout_wokes"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.feibo.joke.view.widget.TabView
+            android:id="@+id/tabview_works"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tabView:messageHint="false"
+            tabView:select="true"
+            tabView:tabText="@string/tab_works"
+            tabView:type="userDetail" />
+
+    </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/tab_layout_loves"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.feibo.joke.view.widget.TabView
+            android:id="@+id/tabview_loves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tabView:messageHint="false"
+            tabView:select="false"
+            tabView:tabText="@string/tab_loves"
+            tabView:type="userDetail" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_layout_attention"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.feibo.joke.view.widget.TabView
+            android:id="@+id/tabview_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tabView:messageHint="false"
+            tabView:select="false"
+            tabView:tabText="@string/tab_attention"
+            tabView:type="userDetail" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_layout_fans"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.feibo.joke.view.widget.TabView
+            android:id="@+id/tabview_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tabView:messageHint="false"
+            tabView:select="false"
+            tabView:tabText="@string/tab_fans"
+            tabView:type="userDetail" />
+    </RelativeLayout>
+
+</LinearLayout>

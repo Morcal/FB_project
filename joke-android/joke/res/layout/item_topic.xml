@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c9_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.feibo.joke.view.widget.ScaleView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            sv:ratioHeight="1"
+            sv:ratioWidth="1" />
+        
+        <TextView
+            android:id="@+id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/p10"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/s3"
+            android:textColor="@color/c9_white"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/p10"
+        android:paddingLeft="@dimen/p7"
+        android:paddingRight="@dimen/p7"
+        android:paddingTop="@dimen/p10" >
+
+        <TextView
+            android:id="@+id/works"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s6" />
+
+        <TextView
+            android:id="@+id/play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s6" />
+    </RelativeLayout>
+
+</LinearLayout>

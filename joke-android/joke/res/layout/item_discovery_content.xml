@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c8_shallow_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/p3"
+        android:paddingRight="@dimen/p3"
+        android:paddingTop="@dimen/p3"
+        tools:ignore="DisableBaselineAlignment" >
+
+        <include
+            android:id="@+id/item_topic1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p3"
+            android:layout_weight="1"
+            layout="@layout/item_discovery_topic" />
+
+        <include
+            android:id="@+id/item_topic2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p3"
+            android:layout_weight="1"
+            layout="@layout/item_discovery_topic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/p3"
+        android:paddingLeft="@dimen/p3"
+        android:paddingRight="@dimen/p3"
+        tools:ignore="DisableBaselineAlignment" >
+
+        <include
+            android:id="@+id/item_topic3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p3"
+            android:layout_weight="1"
+            layout="@layout/item_discovery_topic" />
+
+        <include
+            android:id="@+id/item_topic4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p3"
+            android:layout_weight="1"
+            layout="@layout/item_discovery_topic" />
+    </LinearLayout>
+
+</LinearLayout>

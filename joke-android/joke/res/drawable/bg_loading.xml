@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/icon_page_refresh01"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/icon_page_refresh02"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/icon_page_refresh03"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/icon_page_refresh04"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/icon_page_refresh05"
+        android:duration="200" />
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0002"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0003"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0004"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload000"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+    <!--<item-->
+    <!--android:drawable="@drawable/videoload0001"-->
+    <!--android:duration="200" />-->
+
+
+</animation-list>

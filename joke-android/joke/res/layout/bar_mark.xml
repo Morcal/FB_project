@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.feibo.joke.video.widget.MarkBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center_vertical"
+    android:scrollbars="none"
+    android:visibility="invisible" >
+
+    <LinearLayout
+        android:id="@+id/btn_back"
+        android:layout_width="34dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_chartlet_back"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="24dp"
+            android:background="@drawable/btn_back_video" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.feibo.joke.video.widget.MarkGridView
+                android:id="@+id/grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@android:color/transparent"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</com.feibo.joke.video.widget.MarkBar>

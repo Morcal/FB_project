@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/base_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.feibo.joke.view.widget.MatrixImageView
+            android:id="@+id/miv_crop_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c6_grey"
+            app:radius="150dp" />
+
+        <com.feibo.joke.view.widget.CropMask
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:radius="150dp" />
+
+        <TextView
+            android:id="@+id/tv_rotate_left"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="旋转"
+            android:textColor="@color/c9_white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>

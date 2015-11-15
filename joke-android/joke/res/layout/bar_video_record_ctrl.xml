@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c4_black"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <com.feibo.joke.video.widget.FallbackButton
+            android:id="@+id/btn_fall_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_fall_back_normal"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <com.feibo.joke.video.widget.RecordButton
+        android:id="@+id/btn_record"
+        android:layout_width="86dp"
+        android:layout_height="86dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/btn_finish"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_finish" />
+
+        <View
+            android:id="@+id/btn_import"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_introduction" />
+    </RelativeLayout>
+
+</LinearLayout>

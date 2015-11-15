@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white"
+    android:orientation="vertical" >
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p6"
+        item:hintType="seetingSwitch"
+        item:itemTitle="@string/setting_message_new"
+        item:showBottomLine="true"
+        item:switchStatu="false" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="seetingSwitch"
+        item:itemTitle="@string/setting_message_like"
+        item:showBottomLine="true"
+        item:switchStatu="true" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_fans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="seetingSwitch"
+        item:itemTitle="@string/setting_message_fans"
+        item:showBottomLine="true"
+        item:switchStatu="true" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="seetingSwitch"
+        item:itemTitle="@string/setting_message_notice"
+        item:showBottomLine="false"
+        item:switchStatu="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p6"
+        android:paddingLeft="@dimen/p18"
+        android:paddingRight="@dimen/p18"
+        android:text="@string/setting_message_hint"
+        android:textColor="@color/c6_grey"
+        android:textSize="@dimen/s4" />
+
+</LinearLayout>

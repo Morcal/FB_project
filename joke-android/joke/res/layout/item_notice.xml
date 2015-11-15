@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_base_item_layout"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/p15">
+
+        <com.feibo.joke.view.widget.CircleImageView
+            android:id="@+id/item_avatar"
+            android:layout_width="@dimen/h40"
+            android:layout_height="@dimen/h40"
+            android:src="@drawable/icon_feedback_photo"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/p8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/p5"
+                android:text="冷笑话精选"
+                android:textColor="@color/c5_dark_grey"
+                android:textSize="@dimen/s3"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="10分钟前"
+                android:textColor="@color/c6_grey"
+                android:textSize="@dimen/s6"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diliver_line_height"
+        android:background="@color/c7_light_grey" />
+
+</LinearLayout>

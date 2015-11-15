@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h45"
+    android:background="@color/c9_white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/p10"
+        android:paddingLeft="@dimen/p20"
+        android:paddingRight="@dimen/p20"
+        android:paddingTop="@dimen/p10" >
+
+        <com.feibo.joke.view.widget.CircleImageView
+            android:id="@+id/titleImg"
+            android:layout_width="@dimen/h30"
+            android:layout_height="@dimen/h30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/p12" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/titleImg"
+            android:text="不做事就不是死"
+            android:textColor="@color/c2_orange"
+            android:textSize="@dimen/s1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_arrow_yellow" />
+    </RelativeLayout>
+
+</RelativeLayout>

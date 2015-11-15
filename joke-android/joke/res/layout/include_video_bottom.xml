@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/p10"
+    android:paddingLeft="@dimen/p7"
+    android:paddingRight="@dimen/p7"
+    android:paddingTop="@dimen/p10" >
+
+    <LinearLayout
+        android:id="@+id/layout_title_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/p10" >
+
+        <com.feibo.joke.view.widget.VImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/author_img"
+            android:layout_width="@dimen/h28"
+            android:layout_height="@dimen/h28"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/p7"
+            app:vImage="@drawable/icon_user_v" />
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/c5_dark_grey"
+            android:textSize="@dimen/s3" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_play_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/icon_like"
+            android:drawablePadding="@dimen/p3"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s6" />
+
+        <TextView
+            android:id="@+id/play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s6" />
+    </RelativeLayout>
+
+</LinearLayout>

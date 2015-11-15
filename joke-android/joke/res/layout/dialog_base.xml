@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_base"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:paddingTop="25dp" >
+
+    <TextView
+        android:id="@+id/dialog_remind_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/dialog_content"
+        android:textColor="@color/c4_black"
+        android:textSize="@dimen/s1" />
+
+    <Button
+        android:id="@+id/dialog_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dialog_base_btn_height"
+        android:layout_marginTop="@dimen/module_distance"
+        android:background="@drawable/bg_orange"
+        android:gravity="center"
+        android:visibility="gone"
+        android:minWidth="@dimen/h160"
+        android:text="@string/dialog_confirm_sure"
+        android:textColor="@color/c9_white"
+        android:textSize="@dimen/s2" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/module_distance"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/small_module_distance"
+        android:paddingRight="@dimen/small_module_distance" >
+
+        <TextView
+            android:id="@+id/dialog_remind_cancle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_base_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_grey"
+            android:gravity="center"
+            android:text="@string/dialog_cancle"
+            android:textColor="@color/c4_black"
+            android:textSize="@dimen/s2" />
+
+        <TextView
+            android:id="@+id/dialog_remind_confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_base_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/bg_orange"
+            android:gravity="center"
+            android:maxWidth="@dimen/h160"
+            android:text="@string/dialog_confirm_sure"
+            android:textColor="@color/c9_white"
+            android:textSize="@dimen/s2" />
+    </LinearLayout>
+
+</LinearLayout>

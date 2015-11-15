@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c8_shallow_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/p10" >
+
+    <RelativeLayout
+        android:id="@+id/discoivery_recommend_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h45"
+        android:background="@color/c9_white"
+        android:clickable="true"
+        android:paddingBottom="@dimen/p10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/p15"
+            android:drawableRight="@drawable/icon_arrow_yellow"
+            android:gravity="center_vertical"
+            android:text="@string/discovery_recommand_title"
+            android:textColor="@color/c2_orange"
+            android:textSize="@dimen/s1" />
+    </RelativeLayout>
+
+</LinearLayout>

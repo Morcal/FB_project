@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c9_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h65"
+        android:orientation="horizontal" >
+
+        <com.feibo.joke.view.widget.VImageView
+            android:id="@+id/item_avatar"
+            android:layout_width="@dimen/h40"
+            android:layout_height="@dimen/h40"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/p15" />
+
+        <TextView
+            android:id="@+id/item_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/p8"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="冷笑话精选"
+            android:textColor="@color/c5_dark_grey"
+            android:textSize="@dimen/s2" />
+
+        <com.feibo.joke.view.widget.FocusStateView
+            android:id="@+id/item_focus"
+            android:layout_width="@dimen/h60"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/p8"
+            android:scaleType="centerInside"
+            app:focusAlreadyImage="@drawable/btn_follow_check"
+            app:focusEachImage="@drawable/btn_follow_each"
+            app:focusInviteImage="@drawable/btn_focus_invita"
+            app:focusNullImage="@drawable/btn_attention_noframe_bg"
+            app:focusState="focusInvite" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/diliver_line_height"
+        android:background="@color/c7_light_grey" />
+
+</LinearLayout>

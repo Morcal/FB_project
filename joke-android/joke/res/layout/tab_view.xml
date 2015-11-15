@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent" >
+ <!-- 这层去掉的话会导致分割线异常 -->
+
+
+        <!-- 这个是用来占位的 -->
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="@dimen/p2"
+            android:layout_marginBottom="@dimen/p3"
+            android:background="@color/c9_white"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/tab_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/tab_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/c9_white"
+                android:textSize="@dimen/s1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tab_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tab_num"
+                android:gravity="center_horizontal"
+                android:text="@string/handpick"
+                android:textColor="@color/c9_white"
+                android:textSize="@dimen/s1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tab_content"
+            android:layout_toRightOf="@id/tab_content"
+            android:paddingLeft="@dimen/p5" >
+
+            <ImageView
+                android:id="@+id/tab_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_red"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tab_line"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/p2"
+            android:layout_alignEnd="@id/tab_content"
+            android:layout_alignStart="@id/tab_content"
+            android:layout_below="@id/tab_content"
+            android:layout_marginTop="@dimen/p3"
+            android:background="@color/c9_white" />
+
+        <View
+            android:id="@+id/division_line"
+            android:layout_width="@dimen/diliver_line_height"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/p5"
+            android:layout_marginBottom="@dimen/p5"
+            android:layout_alignBottom="@id/tab_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tab_content"
+            android:background="@color/line"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

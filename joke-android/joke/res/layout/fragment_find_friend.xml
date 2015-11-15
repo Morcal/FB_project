@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white"
+    android:orientation="vertical" >
+
+    <!-- 搜罗栏条目 -->
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c8_shallow_white"
+        android:padding="@dimen/p6" >
+
+        <EditText
+            android:id="@+id/discoivery_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h40"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/p6"
+            android:gravity="center_vertical"
+            android:hint="@string/default_find_friend_search"
+            android:paddingLeft="@dimen/p10"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s4" />
+    </LinearLayout>
+
+    <!-- 搞笑大人推荐条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_add_funny_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:height="@dimen/h50"
+        item:hintType="numHint"
+        item:itemDrawable="@drawable/icon_funny"
+        item:itemTitle="@string/add_funny_friend_text"
+        item:showBottomLine="true" />
+
+    <!-- 添加微博好友条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_add_weibo_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:height="@dimen/h50"
+        item:hintType="numHint"
+        item:itemDrawable="@drawable/icon_weibo"
+        item:itemTitle="@string/add_weibo_friend_text"
+        item:showBottomLine="true" />
+
+    <!-- 添加手机通讯录好友条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_add_phone_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        item:height="@dimen/h50"
+        item:hintType="noHint"
+        item:itemDrawable="@drawable/icon_phone"
+        item:itemTitle="@string/add_phone_friend_text"
+        item:showBottomLine="true" />
+
+    <!-- 邀请微信好友条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_add_weixin_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:height="@dimen/h50"
+        item:hintType="noHint"
+        item:itemDrawable="@drawable/icon_weixin"
+        item:itemTitle="@string/add_weixin_friend_text"
+        item:showBottomLine="true" />
+
+    <!-- 邀请QQ好友条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_add_qq_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:height="@dimen/h50"
+        item:hintType="noHint"
+        item:itemDrawable="@drawable/icon_qq"
+        item:itemTitle="@string/add_qq_friend_text"
+        item:showBottomLine="true" />
+
+</LinearLayout>

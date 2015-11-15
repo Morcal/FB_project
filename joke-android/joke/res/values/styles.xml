@@ -1,0 +1,58 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!-- 视频详情页中分享和点赞按钮的样式 -->
+    <style name="videoDetailButtonStyle">
+        <item name="android:layout_width">@dimen/h95</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:drawablePadding">@dimen/p5</item>
+        <item name="android:textColor">@drawable/btn_video_share_text_color</item>
+        <item name="android:textSize">@dimen/s2</item>
+    </style>
+
+    <!-- 分享、登录对话框 按钮样式 -->
+    <style name="shareButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/c8_shallow_white</item>
+        <item name="android:drawablePadding">@dimen/p8</item>
+        <item name="android:textColor">@color/c4_black</item>
+        <item name="android:textSize">@dimen/s4</item>
+    </style>
+
+    <!-- 对话框弹出时的动画样式 -->
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">  
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>  
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>  
+    </style>
+    
+    <style name="fullscreen_dialog">  
+        <item name="android:windowFrame">@null</item>  
+        <item name="android:windowIsFloating">true</item>  
+        <item name="android:windowIsTranslucent">false</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowBackground">@color/dialog_bg</item>  
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="SimpleDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
+    <style name="shadowTextView">
+        <item name="android:shadowColor">#cccccc</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:background">@null</item>
+    </style>
+
+</resources>

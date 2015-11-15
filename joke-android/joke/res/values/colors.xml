@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="main_tab_color_normal">#515151</color>
+    <color name="main_tab_color_press">#FFC600</color>
+    
+    <color name="c_age_man">#4EBBF9</color>
+    <color name="c_age_woman">#FF5A69</color>
+    <color name="titlebar_bg">#FCD652</color>
+    
+    <color name="c1_light_orange">#FCD652</color>
+    <color name="c2_orange">#FFC600</color>
+    <color name="c3_red">#FF0000</color>
+    <color name="c3_red_alpha_70">#B2FF0000</color>
+    <color name="c4_black">#000000</color>
+    <color name="c4_black_alpha_30">#4B000000</color>
+    <color name="c4_black_alpha_50">#7f000000</color>
+    <color name="c4_black_alpha_60">#99000000</color>
+    <color name="c4_black_alpha_85">#D8000000</color>
+    <color name="c5_dark_grey">#515151</color>
+    <color name="c6_grey">#929292</color>
+    <color name="c7_light_grey">#DBDBDB</color>
+    <color name="c8_shallow_white">#F1F1F1</color>
+    <color name="c9_white">#FFFFFF</color>
+    <color name="c9_white_alpha_10">#19FFFFFF</color>
+    <color name="c9_white_alpha_50">#7fFFFFFF</color>
+    <color name="c9_white_alpha_70">#B2FFFFFF</color>
+    
+     <color name="bg_music_content">#262626</color>
+    <color name="search_bg">#929292</color>
+    
+    <color name="c6_grey_alpha_50">#7f929292</color>
+    <color name="c6_grey_alpha_30">#4B929292</color>
+    
+    <color name="line">#DBDBDB</color>
+    
+ 	<color name="toggle_button_left">#ffd9d9d9</color>
+ 	<color name="toggle_button_right">#ffeec900</color>
+ 	
+ 	<color name="dialog_bg">#a6000000</color>
+ 	
+ 	<color name="user_detail_avatar_bg_blur_color">#e5e5e5</color>
+	
+</resources>

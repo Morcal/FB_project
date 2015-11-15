@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white">
+
+    <TextView
+        android:id="@+id/board_info_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/p10"
+        android:drawableTop="@drawable/icon_no_duifanggerenzhuye"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/p10"
+        android:text="什么都没有! 空空的!"
+        android:textColor="@color/c6_grey"
+        android:textSize="@dimen/s3" />
+</RelativeLayout>

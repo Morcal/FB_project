@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h90"
+        android:layout_marginTop="@dimen/p6"
+        android:background="@drawable/bg_base_item_layout"
+        android:orientation="horizontal"
+        android:padding="@dimen/p18" >
+
+        <com.feibo.joke.view.widget.RatioLayout
+    		xmlns:ratioLayout="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            ratioLayout:radioType="byHeight" >
+
+            <com.feibo.joke.view.widget.VImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                item:vImage="@drawable/icon_user_v_big"
+                item:showV="false"
+                />
+        </com.feibo.joke.view.widget.RatioLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/p18"
+            android:layout_marginRight="@dimen/p18"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/p5"
+            android:paddingTop="@dimen/p5" >
+
+            <!-- 已登錄条目 -->
+
+            <RelativeLayout
+                android:id="@+id/board_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/user_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/default_user_nickname"
+                    android:textColor="@color/c5_dark_grey"
+                    android:textSize="@dimen/s1" />
+
+                <TextView
+                    android:id="@+id/user_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:drawableLeft="@drawable/icon_like"
+                    android:drawablePadding="@dimen/p5"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="被爱过好多次"
+                    android:textColor="@color/c6_grey"
+                    android:textSize="@dimen/s4" />
+            </RelativeLayout>
+
+            <!-- 未登錄条目 -->
+
+            <TextView
+                android:id="@+id/board_unlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/default_user_unlogin_text"
+                android:textColor="@color/c5_dark_grey"
+                android:textSize="@dimen/s1"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_arrow"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!-- 消息条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p6"
+        item:hintType="numHint"
+        item:itemDrawable="@drawable/icon_news"
+        item:itemTitle="@string/mine_message"
+        item:showBottomLine="true" />
+
+    <!-- 找朋友条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_find_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="numHint"
+        item:itemDrawable="@drawable/icon_friend"
+        item:itemTitle="@string/mine_find_friend"
+        item:showBottomLine="false" />
+
+    <!-- 草稿箱条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_draft_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p6"
+        item:hintType="messageHint"
+        item:itemDrawable="@drawable/icon_draft"
+        item:itemTitle="@string/mine_caogao"
+        item:messageHintTitle="@string/space"
+        item:showBottomLine="false" />
+
+    <!-- 设置条目 -->
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p6"
+        item:hintType="messageHint"
+        item:itemDrawable="@drawable/icon_setting"
+        item:itemTitle="@string/mine_setting"
+        item:messageHintTitle="@string/space"
+        item:showBottomLine="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

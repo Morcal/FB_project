@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/p6"
+        android:id="@+id/item_head_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.feibo.joke.view.widget.BaseItemLayout
+            android:id="@+id/bil_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            item:hintType="messageHint"
+            item:itemTitle="@string/head_img"
+            item:messageHintTitle="@string/space"
+            item:showBottomLine="true" />
+
+        <com.feibo.joke.view.widget.VImageView
+            android:id="@+id/iv_auother_head"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/bil_head"
+            android:layout_alignTop="@id/bil_head"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/p29"/>
+    </RelativeLayout>
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="messageHint"
+        item:itemTitle="@string/default_user_nickname"
+        item:messageHintTitle="@string/default_user_nickname"
+        item:showBottomLine="false" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p6"
+        item:hintType="messageHint"
+        item:itemTitle="@string/gender"
+        item:messageHintTitle="@string/man"
+        item:showBottomLine="true" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="messageHint"
+        item:itemTitle="@string/area"
+        item:messageHintTitle="@string/default_place"
+        item:showBottomLine="true" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="messageHint"
+        item:itemTitle="@string/birth"
+        item:messageHintTitle="@string/default_birth"
+        item:showBottomLine="true" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="messageHint"
+        item:itemTitle="@string/signature"
+        item:messageHintTitle="@string/default_signature"
+        item:showBottomLine="false" />
+
+</LinearLayout>

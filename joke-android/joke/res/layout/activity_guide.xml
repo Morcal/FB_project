@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <com.feibo.joke.view.widget.IndicatorView
+        xmlns:app="http://schemas.android.com/apk/res/com.feibo.joke"
+        android:id="@+id/guide_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        app:count="0"
+        app:drawable="@drawable/ic_guide_indicator"
+        app:position="0"
+        app:space="12dp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h240"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

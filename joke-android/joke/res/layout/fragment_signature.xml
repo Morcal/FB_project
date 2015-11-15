@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_signature"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/c9_white"
+        android:gravity="top"
+        android:hint="请输入个性签名"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="17dp"
+        android:textColor="@color/c5_dark_grey"
+        android:textSize="@dimen/s2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c9_white" >
+
+        <TextView
+            android:id="@+id/tv_legth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="0"
+            android:textColor="@color/c3_red"
+            android:textSize="@dimen/s4" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/btn_search_cancel" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/c8_shallow_white" />
+
+</LinearLayout>

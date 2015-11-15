@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MainTabButton">
+        <attr name="drawablePadding" format="reference" />
+        <attr name="drawableTopNormal" format="dimension" />
+        <attr name="drawableTopPress" format="dimension" />
+        <attr name="redHintVisible" format="boolean" />
+        <attr name="text" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TabView">
+        <attr name="type">
+            <enum name="hindpick" value="0" />
+            <enum name="userDetail" value="1" />
+        </attr>
+        <attr name="messageHint" format="boolean" />
+        <attr name="select" format="boolean" />
+        <attr name="tabText" format="reference" />
+        <attr name="numText" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TabViewDetailGroup">
+        <attr name="textLinePadding" format="dimension" />
+        <attr name="textNormalColor" format="color" />
+        <attr name="textPressColor" format="color" />
+        <attr name="lineColor" format="color" />
+        <attr name="from">
+            <enum name="mine" value="1" />
+            <enum name="other" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ScaleView">
+        <attr name="ratioWidth" format="integer" />
+        <attr name="ratioHeight" format="integer" />
+        <attr name="radioType" >
+            <enum name="byWidth" value="0" />
+            <enum name="byHeight" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="DiscoveryTopicContentGroup">
+        <attr name="singleLine" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ReplyTextView">
+        <attr name="replyAuthor" format="string" />
+        <attr name="nameColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="BaseItemLayout">
+        <attr name="hintType">
+            <enum name="noHint" value="0" />
+            <enum name="numHint" value="1" />
+            <enum name="messageHint" value="3" />
+            <enum name="seetingSwitch" value="4" />
+        </attr>
+        <attr name="showArrow" format="boolean" />
+        <attr name="switchStatu" format="boolean" />
+        <attr name="vheight" format="dimension" />
+        <attr name="showBottomLine" format="boolean" />
+        <attr name="itemDrawable" format="reference" />
+        <attr name="itemTitle" format="reference" />
+        <attr name="messageHintTitle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FocusStateView">
+        <attr name="focusState">
+            <enum name="focusNull" value="0" />
+            <enum name="focusAlready" value="1" />
+            <enum name="focusEach" value="2" />
+            <enum name="focusInvite" value="4" />
+        </attr>
+        <attr name="focusNullImage" format="reference" />
+        <attr name="focusAlreadyImage" format="reference" />
+        <attr name="focusBeAttentionImage" format="reference" />
+        <attr name="focusEachImage" format="reference" />
+        <attr name="focusInviteImage" format="reference" />
+        <attr name="cancleAttentionToast" format="boolean"/>
+        <attr name="attentionToast" format="boolean"/>
+        <attr name="canCancleAttention" format="boolean"/>
+        <attr name="showDialogWhenCancleAttention" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="CListView">
+        <attr name="refreshEnable" format="boolean" />
+        <attr name="loadMoreEnable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="XListView">
+        <attr name="isCustomHeaderView" format="boolean" />
+        <attr name="headerLayout" format="reference" />
+        <attr name="zoomRatio" format="float" />
+    </declare-styleable>
+    <declare-styleable name="MessageButton">
+        <attr name="selectType">
+            <enum name="message" value="1" />
+            <enum name="notice" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="LToggleButton">
+        <attr name="leftBackground" format="color" />
+        <attr name="rightBackground" format="color" />
+    </declare-styleable>
+    <declare-styleable name="IndicatorView">
+        <attr name="drawable" format="reference" />
+        <attr name="count" format="integer" />
+        <attr name="position" format="integer" />
+        <attr name="space" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="VImageView">
+        <attr name="vSize" format="dimension"/>
+        <attr name="vImage" format="reference"/>
+        <attr name="showV" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="radius" format="dimension" />
+    <declare-styleable name="MatrixImageView">
+        <attr name="radius" />
+    </declare-styleable>
+    <declare-styleable name="CropMask">
+        <attr name="radius" />
+    </declare-styleable>
+    
+
+</resources>

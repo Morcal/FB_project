@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.feibo.joke.view.widget.TouchedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <ImageView 
+	    	android:id="@+id/iv_back"
+	    	android:layout_width="0dp"
+       	 	android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/btn_each_normal"/>
+        <ImageView 
+            android:id="@+id/iv_play_control"
+            android:layout_width="0dp"
+       	 	android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/btn_each_normal"/>
+        <ImageView 
+	    	android:id="@+id/iv_advance"
+	    	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/btn_each_pressed"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    	<TextView 
+        	android:id="@+id/tv_current_time"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content"/>
+	
+    	<SeekBar
+        	android:id="@+id/sb_progress"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="4"/>
+
+    	<TextView 
+        	android:id="@+id/tv_total_time"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/btn_each_pressed"/>
+	</LinearLayout>
+</com.feibo.joke.view.widget.TouchedLinearLayout>

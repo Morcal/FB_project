@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:list="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white" >
+
+    <com.feibo.joke.view.widget.waterpull.CListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        android:scrollbars="vertical"
+        list:headerLayout="@layout/header_userdetail"
+        list:zoomRatio="1.1"
+        list:isCustomHeaderView="true" />
+
+</RelativeLayout>

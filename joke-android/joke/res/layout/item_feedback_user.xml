@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:layout_marginTop="@dimen/p23"
+    android:paddingTop="@dimen/p23"
+     >
+
+    <com.feibo.joke.view.widget.VImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/h42"
+        android:layout_height="@dimen/h42"
+        android:layout_marginRight="@dimen/p15"
+        android:layout_marginLeft="@dimen/p7"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tv_say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/p12"
+        android:paddingBottom="@dimen/p12"
+        android:paddingLeft="@dimen/p12"
+        android:paddingRight="@dimen/p12"
+        android:layout_toLeftOf="@id/iv_head"
+        android:textSize="@dimen/s3"
+        android:textColor="@color/c5_dark_grey"
+        android:background="@drawable/bg_feedback_grey"
+        android:text="意见反馈意见反馈意见反馈意见反馈意见反馈意见反馈意见反馈馈意见反馈馈意见反馈"
+        android:maxEms="13"
+        android:minEms="1" />
+
+</RelativeLayout>

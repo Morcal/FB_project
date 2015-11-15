@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">冷笑话精选</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="homepage">首页</string>
+    <string name="handpick">精选</string>
+    <string name="found">发现</string>
+    <string name="dynamic">贵圈</string>
+    <string name="mine">我</string>
+    <string name="add_friend">添加好友</string>
+    <string name="weibo_friend">新浪微博</string>
+
+    <string name="tab_works">片儿</string>
+    <string name="tab_loves">爱过</string>
+    <string name="tab_attention">关注</string>
+    <string name="tab_fans">粉丝</string>
+
+    <string name="space"> </string>
+    <string name="save">保存</string>
+    <string name="gender">性别</string>
+    <string name="signature">个性签名</string>
+    <string name="default_signature">还没有个签哦！</string>
+    <string name="default_birth">8888-88-88</string>
+    <string name="birth">生日</string>
+    <string name="area">地区</string>
+    <string name="default_place">太阳系 火星</string>
+    <string name="man">男</string>
+    <string name="head_img">头像</string>
+    <string name="message">消息</string>
+    <string name="find_friend">找朋友</string>
+    <string name="default_user_nickname">昵称</string>
+    <string name="default_user_be_like">被爱过888次</string>
+    <string name="default_user_unlogin_text">立即登录看看我的主页</string>
+    <string name="default_find_friend_search">输入你想找的用户的名称</string>
+    <string name="add_funny_friend_text">搞笑大咖推荐</string>
+    <string name="add_weibo_friend_text">添加新浪微博好友</string>
+    <string name="add_phone_friend_text">添加手机通讯录好友</string>
+    <string name="add_weixin_friend_text">邀请微信好友</string>
+    <string name="add_qq_friend_text">邀请QQ好友</string>
+    <string name="draft_box">草稿箱</string>
+    <string name="set">设置</string>
+    <string name="edit">编辑</string>
+    <string name="back_text">返回</string>
+    <string name="one_key">一键关注</string>
+
+    <string name="exit_joke">再按一次退出</string>
+
+    <!-- 分享对话框 -->
+    <string name="dialog_share_title">分享到...</string>
+    <string name="dialog_share_sina">新浪微博</string>
+    <string name="dialog_share_qq">QQ好友</string>
+    <string name="dialog_share_zone">QQ空间</string>
+    <string name="dialog_share_weixin">微信好友</string>
+    <string name="dialog_share_friend">朋友圈</string>
+    <string name="dialog_share_copy_url">复制链接</string>
+    <string name="dialog_share_cancel">取消</string>
+
+    <!-- 登录对话框-->
+    <string name="dialog_login_weibo">微博登录</string>
+    <string name="dialog_login_qq">QQ登录</string>
+    <string name="dialog_login_weixin">微信登录</string>
+    <string name="dialog_login_other">使用以下账号快速登录</string>
+
+    <string name="message_message">消息</string>
+    <string name="message_notice">通知</string>
+
+    <string name="user_detail">个人主页</string>
+
+    <string name="mine_message">消息</string>
+    <string name="mine_find_friend">找朋友</string>
+    <string name="mine_caogao">草稿箱</string>
+    <string name="mine_setting">设置</string>
+
+    <string name="setting_check_new_version">版本更新</string>
+    <string name="setting_hint_has_draft">有未发布视频</string>
+    <string name="setting_message">消息设置</string>
+    <string name="setting_has_new_version">有最新版本</string>
+    <string name="setting_save_video_to_local">保存拍摄的视频到相册</string>
+    <string name="setting_wifi_play">Wifi下自动播放视频</string>
+    <string name="setting_suggestion">意见反馈</string>
+    <string name="setting_protocol">用户协议</string>
+    <string name="setting_version">版本更新</string>
+    <string name="setting_version_hint">有最新版本</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_text">15M</string>
+    <string name="setting_login_now">立即登录</string>
+    <string name="setting_login_out">退出登录</string>
+    <string name="dialog_clear_cache_success">清除成功</string>
+
+    <string name="setting_message_new">评论消息提醒</string>
+    <string name="setting_message_like">收到点赞提醒</string>
+    <string name="setting_message_fans">新粉丝关注提醒</string>
+    <string name="setting_message_notice">官方活动通知</string>
+    <string name="setting_message_hint">若关闭，将有可能会错过好玩的活动和消息提醒</string>
+
+    <!-- 下拉刷新 -->
+    <string name="pull_to_refresh_pull_label">往下拉一拉，就有好吃的</string>
+    <string name="pull_to_refresh_release_label">松开人家嘛，给你好吃的</string>
+    <string name="pull_to_refresh_refreshing_label">等等人家嘛，正在加载中</string>
+    <string name="loading_text">快了快了，就要出来了</string>
+    <string name="loading_default_fail_text">你的网络开小差啦</string>
+    <string name="loading_default_fail_text2">点击重新加载或检查网络~</string>
+    <string name="loading_more">嘻唰唰嘻唰唰</string>
+    <string name="loading_more1">嘻唰唰嘻唰唰 ...</string>
+    <string name="loading_more_no_data">家底都被你挖光了，再去发现新大陆吧~</string>
+
+    <string name="not_network">当前无网络，请检查网络状态</string>
+    <string name="page_no_net">啊哦~无网络</string>
+
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <!-- <string name="xlistview_header_hint_normal">下拉刷新</string> -->
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <!--     <string name="xlistview_header_last_time">上次更新时间：</string> -->
+
+    <string name="xlistview_footer_hint_more">正在加载更多</string>
+    <string name="xlistview_footer_hint_other">更多信息(如ERROR)</string>
+    <string name="xlistview_footer_hint_no_more_data">没有更多笑话啦</string>
+    <!-- <string name="xlistview_footer_hint_ready">松开载入更多</string> -->
+
+
+    <string name="promot_login">你还没有登录，那你要不要</string>
+    <string name="login_now">登登登登上人生巅峰</string>
+
+    <!-- 发现模块 -->
+    <string name="search_hint">笑霸太多，你找哪位?</string>
+    <string name="new_videos">新片上映</string>
+    <string name="discovery_recommand_title">话题大宝荐</string>
+    <!-- 发现搜索 -->
+    <string name="research_hint">找人、找片儿、找#*.......</string>
+
+    <string name="commnet">评论</string>
+    <string name="send">发送</string>
+    <string name="share">分享</string>
+
+    <string name="dialog_cancle">取消</string>
+    <string name="dialog_confirm_sure">确定</string>
+    <string name="dialog_confirm_delete">删除</string>
+    <string name="dialog_confirm_report">举报不良内容</string>
+    <string name="report_success">举报成功，我们会尽快处理。</string>
+
+    <!-- 版本更新 -->
+    <string name="dialog_content">发现新版本，是否为你更新？</string>
+    <string name="dialog_download_content">你处在非Wifi状态下，是否需要更新？</string>
+    <string name="dialog_download_confirm">立即更新</string>
+    <string name="dialog_download_cancle">暂不更新</string>
+
+    <string name="feedback_title">意见反馈</string>
+
+    <!-- 视频模块 -->
+    <string name="warn_record">太短了！给我继续拍</string>
+    <string name="title_video_import">视频库</string>
+    <string name="video_duration_tip_import">仅支持3秒到150秒的视频</string>
+
+    <string name="load_more_over_text_video_detail_comment">没更多好玩的评论了，你也来说说</string>
+    <string name="load_more_over_text_handpick">卧槽！我的底裤都被你扒光了！</string>
+    <string name="load_more_over_text_dynamic">贵圈没更多片儿啦，去关注新好友吧！</string>
+    <string name="load_more_over_text_news_videos">挖坟都挖到这里了，你也来发个片儿！</string>
+    <string name="load_more_over_text_default">没有更多了</string>
+    <string name="search_cancle">取消</string>
+    <string name="search_empty_toast">请输入人名、片儿名。。。</string>
+    <string name="search_edit_hint"><![CDATA[找人、找片儿、找#&*......]]></string>
+    <string name="relate_friends">相关笑友</string>
+    <string name="search_video">你想找的片儿</string>
+</resources>

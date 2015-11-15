@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c9_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/p15"
+        android:paddingRight="@dimen/p15">
+
+        <com.feibo.joke.view.widget.VImageView
+            android:id="@+id/image_avatar"
+            android:layout_width="@dimen/h42"
+            android:layout_height="@dimen/h42"
+            android:layout_marginBottom="@dimen/p9"
+            android:layout_marginTop="@dimen/p9"
+            android:src="@drawable/default_avatar_middle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/image_avatar"
+            android:paddingLeft="@dimen/p10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/c5_dark_grey"
+                android:textSize="@dimen/s2"
+                tools:text="姓名" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c6_grey"
+                    android:textSize="@dimen/s6"
+                    tools:text="10月25日" />
+
+                <TextView
+                    android:id="@+id/text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/p10"
+                    android:textColor="@color/c6_grey"
+                    android:textSize="@dimen/s6"
+                    tools:text="10000 播放" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.feibo.joke.view.widget.FocusStateView
+            android:id="@+id/btn_focus"
+            android:layout_width="@dimen/h60"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/bg_video_detail_focus_selector"
+            app:attentionToast="true"
+            app:canCancleAttention="false"
+            app:focusAlreadyImage="@drawable/btn_follow_check"
+            app:focusEachImage="@drawable/btn_follow_each"
+            app:focusNullImage="@drawable/bg_video_detail_focus_selector"
+            app:focusState="focusNull" />
+    </RelativeLayout>
+
+    <com.feibo.joke.video.widget.EqualRatioLayout
+        android:id="@+id/board_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c4_black">
+
+        <com.feibo.joke.view.widget.AutoPlayView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/image_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/btn_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_video_play" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_progress"/>
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:matProg_barColor="@color/c9_white"
+                app:matProg_progressIndeterminate="true"
+                app:matProg_barWidth="@dimen/p3"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_big_heart"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </com.feibo.joke.video.widget.EqualRatioLayout>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/p15"
+        android:paddingRight="@dimen/p15"
+        android:paddingTop="@dimen/p12"
+        android:textColor="@color/c5_dark_grey"
+        android:textSize="@dimen/s2"
+        tools:text="这是关于这个视频的简单描述!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/p20"
+        android:layout_marginTop="@dimen/p20"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/btn_favor"
+                android:layout_width="@dimen/h95"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_btn"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_favor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/p5"
+                    android:background="@drawable/btn_dianzan_normal" />
+
+                <TextView
+                    android:id="@+id/text_favor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:lines="1"
+                    android:textColor="@drawable/btn_video_share_text_color"
+                    android:textSize="@dimen/s3"
+                    tools:text="19156" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/btn_comment"
+                android:layout_width="@dimen/h95"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_btn"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/btn_video_comment"
+                    android:drawablePadding="@dimen/p5"
+                    android:lines="1"
+                    android:text="评论"
+                    android:textColor="@drawable/btn_video_share_text_color"
+                    android:textSize="@dimen/s3" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/btn_more"
+                android:layout_width="@dimen/h95"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_btn"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/btn_video_more"
+                    android:drawablePadding="@dimen/p5"
+                    android:lines="1"
+                    android:text="更多"
+                    android:textColor="@drawable/btn_video_share_text_color"
+                    android:textSize="@dimen/s3" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

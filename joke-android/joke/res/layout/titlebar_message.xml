@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:background="@color/titlebar_bg" >
+
+    <ImageView
+        android:id="@+id/head_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/p15"
+        android:src="@drawable/btn_back"
+        tools:ignore="ContentDescription" />
+
+    <com.feibo.joke.view.widget.MessageButton
+        xmlns:msg="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/head_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/p80"
+        android:layout_marginRight="@dimen/p80"
+        android:paddingBottom="@dimen/p7"
+        android:paddingTop="@dimen/p7"
+        msg:selectType="message" />
+
+    <ImageView
+        android:id="@+id/head_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/p15"
+        android:src="@drawable/btn_back"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

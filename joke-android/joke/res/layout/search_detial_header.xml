@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c9_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/head_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="相关笑友"
+            android:textColor="@color/c4_black"
+            android:textSize="@dimen/s4" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/author_01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center">
+
+                <com.feibo.joke.view.widget.VImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/author_img01"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:clickable="false"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="@dimen/p7"
+                    android:gravity="center_horizontal"
+                    app:vImage="@drawable/icon_user_v" />
+
+                <TextView
+                    android:clickable="false"
+                    android:id="@+id/author_name01"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/author_img01"
+                    android:layout_alignRight="@id/author_img01"
+                    android:layout_below="@id/author_img01"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="14dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="用户昵"
+                    android:textColor="@color/c5_dark_grey"
+                    android:textSize="@dimen/s5" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/author_02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.feibo.joke.view.widget.VImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/author_img02"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="@dimen/p7"
+                    android:gravity="center_horizontal"
+                    app:vImage="@drawable/icon_user_v" />
+
+                <TextView
+                    android:id="@+id/author_name02"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/author_img02"
+                    android:layout_alignRight="@id/author_img02"
+                    android:layout_below="@id/author_img02"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="14dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="用户昵"
+                    android:textColor="@color/c5_dark_grey"
+                    android:textSize="@dimen/s5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/author_03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.feibo.joke.view.widget.VImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/author_img03"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="@dimen/p7"
+                    android:gravity="center_horizontal"
+                    app:vImage="@drawable/icon_user_v" />
+
+                <TextView
+                    android:id="@+id/author_name03"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/author_img03"
+                    android:layout_alignRight="@id/author_img03"
+                    android:layout_below="@id/author_img03"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="14dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="用户昵"
+                    android:textColor="@color/c5_dark_grey"
+                    android:textSize="@dimen/s5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/author_04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.feibo.joke.view.widget.VImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/author_img04"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="@dimen/p7"
+                    android:gravity="center_horizontal"
+                    app:vImage="@drawable/icon_user_v" />
+
+                <TextView
+                    android:id="@+id/author_name04"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/author_img04"
+                    android:layout_alignRight="@id/author_img04"
+                    android:layout_below="@id/author_img04"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="14dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="用户昵"
+                    android:textColor="@color/c5_dark_grey"
+                    android:textSize="@dimen/s5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/author_05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.feibo.joke.view.widget.VImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/author_img05"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="@dimen/p7"
+                    android:gravity="center_horizontal"
+                    app:vImage="@drawable/icon_user_v" />
+
+                <TextView
+                    android:id="@+id/author_name05"
+                    android:layout_width="37dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/author_img05"
+                    android:layout_alignRight="@id/author_img05"
+                    android:layout_below="@id/author_img05"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="14dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="用户昵"
+                    android:textColor="@color/c5_dark_grey"
+                    android:textSize="@dimen/s5" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/more_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="22.5dp"
+                android:background="@drawable/icon_arrow" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/diliver_line_height"
+            android:background="#4DDBDBDB" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:background="@color/c8_shallow_white" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/diliver_line_height"
+            android:background="#4DDBDBDB" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/search_video"
+        android:textColor="@color/c4_black"
+        android:textSize="@dimen/s4" />
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c8_shallow_white"
+    android:orientation="vertical" >
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p6"
+        item:hintType="noHint"
+        item:itemDrawable="@drawable/icon_message"
+        item:itemTitle="@string/setting_message"
+        item:showBottomLine="true" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_save_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="seetingSwitch"
+        item:itemDrawable="@drawable/icon_video"
+        item:itemTitle="@string/setting_save_video_to_local"
+        item:showBottomLine="true"
+        item:switchStatu="true" />
+    
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="seetingSwitch"
+        item:itemDrawable="@drawable/icon_wifi"
+        item:itemTitle="@string/setting_wifi_play"
+        item:showBottomLine="false"
+        item:switchStatu="false" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p6"
+        item:hintType="noHint"
+        item:itemDrawable="@drawable/icon_feedback"
+        item:itemTitle="@string/setting_suggestion"
+        item:showBottomLine="true" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="messageHint"
+        item:itemDrawable="@drawable/icon_update"
+        item:itemTitle="@string/setting_version"
+        item:messageHintTitle="@string/setting_version_hint"
+        item:showArrow="false"
+        item:showBottomLine="true" />
+    
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="noHint"
+        item:itemDrawable="@drawable/icon_xieyi"
+        item:itemTitle="@string/setting_protocol"
+        item:showBottomLine="true" />
+
+    <com.feibo.joke.view.widget.BaseItemLayout
+        android:id="@+id/item_clearCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        item:hintType="messageHint"
+        item:itemDrawable="@drawable/icon_clear"
+        item:itemTitle="@string/setting_clear_cache"
+        item:messageHintTitle="@string/setting_text"
+        item:showArrow="false"
+        item:showBottomLine="false" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50"
+        android:layout_marginLeft="@dimen/p18"
+        android:layout_marginRight="@dimen/p18"
+        android:layout_marginTop="@dimen/p20"
+        android:background="@drawable/bg_orange"
+        android:text="@string/setting_login_now"
+        android:textColor="@color/c9_white"
+        android:textSize="@dimen/s1" />
+
+</LinearLayout>

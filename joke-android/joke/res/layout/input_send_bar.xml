@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_send_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c9_white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c7_light_grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/p6"
+        android:paddingTop="@dimen/p6"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <Button
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h37"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/p12"
+            android:layout_marginRight="@dimen/p12"
+            android:background="@null"
+            android:text="发送"
+            android:textColor="@color/c5_dark_grey"
+            android:textSize="@dimen/s3" />
+
+        <EditText
+            android:id="@+id/et_say_something"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h37"
+            android:layout_marginLeft="@dimen/p11"
+            android:layout_toLeftOf="@id/tv_send"
+            android:background="@drawable/bg_comment"
+            android:hint="说点什么..."
+            android:paddingLeft="@dimen/p10"
+            android:textColorHint="@color/c6_grey"
+            android:textSize="@dimen/s3" />
+    </RelativeLayout>
+
+</LinearLayout>

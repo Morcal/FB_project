@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_base_item_layout"
+    android:paddingBottom="@dimen/p8" >
+
+    <!-- 视频详情页面的评论条目 -->
+
+    <com.feibo.joke.view.widget.VImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_commentator_head"
+        android:layout_width="@dimen/h37"
+        android:layout_height="@dimen/h37"
+        android:layout_marginLeft="@dimen/p8"
+        android:layout_marginRight="@dimen/p8"
+        android:layout_marginTop="@dimen/p18"
+        app:vImage="@drawable/icon_user_v"
+        />
+
+    <RelativeLayout
+        android:id="@+id/commentator_right_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_commentator_head"
+        android:paddingBottom="@dimen/p12"
+        android:paddingTop="@dimen/p12" >
+
+        <TextView
+            android:id="@+id/tv_commentator_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_user_nickname"
+            android:textColor="@color/c5_dark_grey"
+            android:textSize="@dimen/s3" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_commentator_name"
+            android:layout_marginRight="@dimen/p18"
+            android:paddingTop="@dimen/p5"
+            android:text="@string/commnet"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s3" />
+
+        <TextView
+            android:id="@+id/tv_comment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/p10"
+            android:layout_marginRight="@dimen/p10"
+            android:text="@string/default_birth"
+            android:textColor="@color/c6_grey"
+            android:textSize="@dimen/s6" />
+    </RelativeLayout>
+
+</RelativeLayout>

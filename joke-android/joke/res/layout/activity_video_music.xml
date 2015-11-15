@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c5_dark_grey"
+    android:orientation="vertical" >
+
+    <include layout="@layout/bar_title_back_ok" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_music_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/p12" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/p20"
+                android:text="音乐"
+                android:textColor="@color/c9_white"
+                android:textSize="@dimen/s2" />
+
+            <com.feibo.joke.view.widget.LToggleButton
+                android:layout_width="@dimen/h60"
+                android:layout_height="@dimen/h30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/p20"
+                android:padding="@dimen/p2"
+                app:leftBackground="@color/toggle_button_left"
+                app:rightBackground="@color/toggle_button_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/c5_dark_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/p20"
+                android:text="原音"
+                android:textColor="@color/c9_white"
+                android:textSize="@dimen/s2" />
+
+            <com.feibo.joke.view.widget.LToggleButton
+                android:layout_width="@dimen/h60"
+                android:layout_height="@dimen/h30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/p20"
+                android:padding="@dimen/p2"
+                app:leftBackground="@color/toggle_button_left"
+                app:rightBackground="@color/toggle_button_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:background="@color/bg_music_content"
+        android:divider="@color/c5_dark_grey"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/bar_title_back"/>
+
+    <GridView 
+        android:id="@+id/grid_video"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="4"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="4dp">
+        
+    </GridView>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textSize="@dimen/s4"
+        android:text="@string/video_duration_tip_import"
+        android:gravity="center" />
+    
+</LinearLayout>

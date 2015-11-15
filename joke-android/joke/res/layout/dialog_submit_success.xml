@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scaleView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c9_white"
+        android:padding="@dimen/p6" >
+
+        <RelativeLayout
+            android:id="@+id/img_layout"
+            android:layout_marginLeft="@dimen/p10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/h80"
+                android:layout_height="@dimen/h80"
+                android:src="@drawable/default_video"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/p5"
+                android:drawableTop="@drawable/icon_success"
+                android:text="上传成功"
+                android:textColor="@color/c9_white"
+                android:textSize="@dimen/s6"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/img_layout"
+            android:layout_alignTop="@id/img_layout"
+            android:layout_marginLeft="@dimen/p15"
+            android:layout_marginRight="@dimen/p15"
+            android:layout_toRightOf="@id/img_layout"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/img_layout"
+            android:layout_alignTop="@id/img_layout"
+            android:layout_toRightOf="@id/line"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/p5"
+                android:text="分享到:"
+                android:textColor="@color/c6_grey"
+                android:textSize="@dimen/s6"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="4" >
+
+                <LinearLayout
+                    android:id="@+id/btn_weibo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.feibo.joke.view.widget.ScaleView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/p5"
+                        android:paddingRight="@dimen/p5"
+                        android:src="@drawable/btn_weibo"
+                        scaleView:radioType="byHeight"
+                        scaleView:ratioHeight="1"
+                        scaleView:ratioWidth="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="微博"
+                        android:textColor="@color/c6_grey"
+                        android:textSize="@dimen/s6"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_weixin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.feibo.joke.view.widget.ScaleView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/p5"
+                        android:paddingRight="@dimen/p5"
+                        android:src="@drawable/btn_weixin"
+                        scaleView:radioType="byHeight"
+                        scaleView:ratioHeight="1"
+                        scaleView:ratioWidth="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="微信"
+                        android:textColor="@color/c6_grey"
+                        android:textSize="@dimen/s6"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_weixin_friend"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.feibo.joke.view.widget.ScaleView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/p5"
+                        android:paddingRight="@dimen/p5"
+                        android:src="@drawable/btn_friend"
+                        scaleView:radioType="byHeight"
+                        scaleView:ratioHeight="1"
+                        scaleView:ratioWidth="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="朋友圈"
+                        android:textColor="@color/c6_grey"
+                        android:textSize="@dimen/s6"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_qzone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.feibo.joke.view.widget.ScaleView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/p5"
+                        android:paddingRight="@dimen/p5"
+                        android:src="@drawable/btn_qq"
+                        scaleView:radioType="byHeight"
+                        scaleView:ratioHeight="1"
+                        scaleView:ratioWidth="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="QQ空间"
+                        android:textColor="@color/c6_grey"
+                        android:textSize="@dimen/s6"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:clickable="true"
+            android:paddingBottom="@dimen/p10"
+            android:src="@drawable/btn_close_share"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</LinearLayout>

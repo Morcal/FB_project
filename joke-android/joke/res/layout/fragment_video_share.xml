@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/p14" >
+
+            <ImageView
+                android:id="@+id/image_cover"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@color/c5_dark_grey"/>
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="12.5dp"
+                android:layout_marginLeft="32.5dp"
+                android:layout_marginRight="32.5dp"
+                android:layout_marginTop="110dp"
+                android:src="@drawable/icon_set_cover" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp" >
+
+        <EditText
+            android:id="@+id/text_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c9_white"
+            android:gravity="left|top"
+            android:hint="点击添加描述"
+            android:lines="5"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:paddingTop="13dp"
+            android:textColor="@color/c4_black"
+            android:textColorHint="@color/c6_grey"
+            android:maxLength="140"
+            android:textSize="@dimen/s3" />
+
+        <TextView
+            android:id="@+id/text_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/p10"
+            android:layout_marginRight="@dimen/p13"
+            android:text="140"
+            android:textColor="@color/c7_light_grey"
+            android:textSize="@dimen/s4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="同步到微博"
+                android:textColor="@color/c9_white"
+                android:textSize="@dimen/s2" />
+
+            <com.feibo.joke.view.widget.LToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="@dimen/h60"
+                android:layout_height="@dimen/h30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/p2"
+                app:leftBackground="@color/toggle_button_left"
+                app:rightBackground="@color/toggle_button_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.15dp"
+            android:background="#3B3B3B" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_video_share"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/c9_white"
+        android:textSize="@dimen/s2" />
+</LinearLayout>

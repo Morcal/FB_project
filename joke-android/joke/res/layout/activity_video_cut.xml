@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/bar_title_back_ok" />
+
+    <com.feibo.joke.video.widget.VideoCutFrameLayout
+        android:id="@+id/cut_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c6_grey" >
+    </com.feibo.joke.video.widget.VideoCutFrameLayout>
+</LinearLayout>
